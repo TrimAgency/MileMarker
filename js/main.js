@@ -82,15 +82,184 @@
   // H Winch
   // ==========================================================================||
 
-  Shopatron('#atc_HWA_Kit').addToCartButton({ 
-      partNumber: '34-5020-06' }, { clickSuccess: function () { checkOutHideShow() },
-    });
+  Shopatron('#atc_F_150_Expedition').addToCartButton({ 
+    partNumber: '34-5010-09' }, { clickSuccess: function () { checkOutHideShow() }, 
+  });
+
+  Shopatron('#atc_91_95_NissanPathfinder').addToCartButton({ 
+    partNumber: '34-5010-31' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_78_96_FordFullSize').addToCartButton({ 
+    partNumber: '34-5020-07' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_72_77_FordFullSize').addToCartButton({ 
+    partNumber: '34-5020-06' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_HummerH2').addToCartButton({ 
+    partNumber: '34-5010-15' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_doesNotIncl_PS_Pump').addToCartButton({ 
+    partNumber: '34-5010-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Dodge_Dakota_6_8_cylinder').addToCartButton({ 
+    partNumber: '34-5020-22' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_2011_Fords_Excursion').addToCartButton({ 
+    partNumber: '34-5020-37' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Jeep_CJ_Scrambler').addToCartButton({ 
+    partNumber: '34-5020-51' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_GM_S_Ser_4_3L_Vortec').addToCartButton({ 
+    partNumber: '34-5010-13' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_83_92_Ford_Ranger_90_94_Explorer').addToCartButton({ 
+    partNumber: '34-5020-04' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Jeep_Cherokee').addToCartButton({ 
+    partNumber: '34-5010-50' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_HI_Civilian').addToCartButton({ 
+    partNumber: '34-5010-17' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_72_87_GM_CK_88_91_RV_Series').addToCartButton({ 
+    partNumber: '34-5020-14' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Toyota_79_2002').addToCartButton({ 
+    partNumber: '34-5020-41' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Toyota_79_02').addToCartButton({ 
+    partNumber: '34-5010-80' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Nissan_86_93').addToCartButton({ 
+    partNumber: '34-5010-30' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_93_96_Ford_Ranger_95_96_Explorer').addToCartButton({ 
+    partNumber: '34-5020-05' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_International_Truck_Scout').addToCartButton({ 
+    partNumber: '34-5010-18' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_78_98_FordFullSize').addToCartButton({ 
+    partNumber: '34-5010-07H' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_24_Volt_System').addToCartButton({ 
+    partNumber: '34-5011-00' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_DodgeDakota4Cylinder').addToCartButton({ 
+    partNumber: '34-5020-20' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_99_2004_Ford').addToCartButton({ 
+    partNumber: '34-5010-34' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Landrover_94_98').addToCartButton({ 
+    partNumber: '34-5020-45' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Jeep_Rubicon').addToCartButton({ 
+    partNumber: '34-5020-55' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Dodge_72_93_Full_Size').addToCartButton({ 
+    partNumber: '34-5020-23' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_2005Up_Ford').addToCartButton({ 
+    partNumber: '34-5020-35' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_94_FullSize').addToCartButton({ 
+    partNumber: '34-5020-24' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_GM_S_Series').addToCartButton({ 
+    partNumber: '34-5010-12' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_02_FordRanger_SportTrac').addToCartButton({ 
+    partNumber: '34-5020-10' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
 
   // HI Winch
   // ==========================================================================||
 
+  Shopatron('#atc_FordSuperduty_2005_2010').addToCartButton({ 
+    partNumber: '35-5020-35' }, { clickSuccess: function () { checkOutHideShow() },
+  });
 
-  // HS Winch
+  Shopatron('#atc_Landrover').addToCartButton({ 
+    partNumber: '35-5020-45' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Ford_Superduty_2007').addToCartButton({ 
+    partNumber: '35-5020-36' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_FordSuperduty_2011').addToCartButton({ 
+    partNumber: '35-5020-37' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Toyota').addToCartButton({ 
+    partNumber: '35-5020-41' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Jeep').addToCartButton({ 
+    partNumber: '35-5020-51' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Upto98_Ford').addToCartButton({ 
+    partNumber: '35-5020-07' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Chevy5500').addToCartButton({ 
+    partNumber: '35-5020-81' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_FordSportTrac').addToCartButton({ 
+    partNumber: '35-5020-10' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Ford99_2004_F-150_97_2004').addToCartButton({ 
+    partNumber: '35-5020-34' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_Nissan').addToCartButton({ 
+    partNumber: '35-5020-31' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_H1').addToCartButton({ 
+    partNumber: '35-5020-17' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_H2').addToCartButton({ 
+    partNumber: '35-5020-15' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+
+  // HS Series
   // ==========================================================================||
 
    Shopatron('#atc_HS9000').addToCartButton({ 
