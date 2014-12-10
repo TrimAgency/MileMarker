@@ -559,9 +559,319 @@
   // ==========================================================================
   // ==========================================================================|| 
 
+  // Hubs
+  // ==========================================================================||
+
+  // AMC/Jeep
+  // ==========================================================================||
+
+  Shopatron('#atc_LockoutHub_StainlessSteelDana44').addToCartButton({ 
+    partNumber: '104' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_AMC_Jeep').addToCartButton({ 
+    partNumber: '11035-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockoutHub_Chrome_Dana44').addToCartButton({ 
+    partNumber: '302' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6_Bolt_19_Spline_Flange_3_4_TonHub').addToCartButton({ 
+    partNumber: '423' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6_Bolt_27_Spline_AMCJeepInternationalHarvester').addToCartButton({ 
+    partNumber: '457' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_5Bolt_27SplineHub_Jeep').addToCartButton({ 
+    partNumber: '470' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6Bolt_10SplineHub_AMCJeepInternationalHarvester').addToCartButton({ 
+    partNumber: '481' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  // Britian Leyland
+  // ==========================================================================||
+
+  Shopatron('#atc_6Bolt_10SplineHub_Landrover').addToCartButton({ 
+    partNumber: '420' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6Bolt_24SplineHub_Landrover').addToCartButton({ 
+    partNumber: '432' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  // Chevrolet/GMC
+  // ==========================================================================||
+
+  // Shopatron('#atc_LockoutHub_StainlessSteel_Dana44').addToCartButton({ 
+  //   partNumber: '104' }, { clickSuccess: function () { checkOutHideShow() },
+  // });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChevroletGMC_60_68').addToCartButton({ 
+    partNumber: '11001-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChevroletGMC_57__58_59').addToCartButton({ 
+    partNumber: '11016-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChevroletGMC_Ford').addToCartButton({ 
+    partNumber: '11025-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChevroletGMC_56_57').addToCartButton({ 
+    partNumber: '11026-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChevroletGMC_ChryslerPlymouthDodge').addToCartButton({ 
+    partNumber: '11027-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockoutHub_ChromeDana44').addToCartButton({ 
+    partNumber: '302' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6Bolt_19Spline_Flange3_4TonHub').addToCartButton({ 
+    partNumber: '423' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_StainlessSteelDana60_ChevroletGMC_ChryslerPlymouthDodge').addToCartButton({ 
+    partNumber: '449SS' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  // Chrysler/Plymouth/Dodge 
+  // ==========================================================================||
+
+  Shopatron('#atc_LockoutHub_StainlessSteelDana44').addToCartButton({ 
+    partNumber: '104' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChryslerPlymouthDodge_68_75').addToCartButton({ 
+    partNumber: '11017-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLocking_Hub_ChryslerPlymouthDodge_50_60_42_56').addToCartButton({ 
+    partNumber: '11022-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChevroletGMC_ChryslerPlymouthDodge_54_55').addToCartButton({ 
+    partNumber: '1027-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChryslerPlymouthDodge_InternationalHarvester_76_89').addToCartButton({ 
+    partNumber: '11034-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_AMCJeep_ChryslerPlymouthDodge').addToCartButton({ 
+    partNumber: '11035-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockoutHub_ChromeDana44').addToCartButton({ 
+    partNumber: '302' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6Bolt_19Spline_Flange3_4TonHub').addToCartButton({ 
+    partNumber: '423' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_StainlessSteelDana60_ChevroletGMC_ChryslerPlymouthDodge').addToCartButton({ 
+    partNumber: '449SS' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+
+  // Dana 70  
+  // ==========================================================================||
+
+  Shopatron('#atc_35Slpine_StainlessSteel_Dana70_HeavyDuty').addToCartButton({ 
+    partNumber: '459SS' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+
+
+  // Ford
+  // ==========================================================================||
+
+  Shopatron('#atc_LockoutHub_StainlessSteelDana44').addToCartButton({ 
+    partNumber: '104' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChevroletGMC_Ford_58_59').addToCartButton({ 
+    partNumber: '11025-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_FordRockwell').addToCartButton({ 
+    partNumber: '11038-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_FordRockwell_84_94').addToCartButton({ 
+    partNumber: '11162-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockoutHub_ChromeDana44').addToCartButton({ 
+    partNumber: '302' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6Bolt_19Spline_Flange3_4TonHub').addToCartButton({ 
+    partNumber: '423' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_27Spline_LockOutHub_FordMazda').addToCartButton({ 
+    partNumber: '426' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockoutHub_RangerBroncoII').addToCartButton({ 
+    partNumber: '427' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockOutHub_FordMazda').addToCartButton({ 
+    partNumber: '428' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_StainlessSteelDana60_ChevroletGMC_ChryslerPlymouthDodge').addToCartButton({ 
+    partNumber: '449SS' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+
+  // Geo
+  // ==========================================================================||
+
+
+  Shopatron('#atc_LockOutHub_SuzukiGeo').addToCartButton({ 
+    partNumber: '436' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockOutHubs_27Spline').addToCartButton({ 
+    partNumber: '438' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+
+  // International Harvester
+  // ==========================================================================||
+
+  Shopatron('#atc_LockoutHub_StainlessSteelDana44').addToCartButton({ 
+    partNumber: '104' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_InternationalHarvester').addToCartButton({ 
+    partNumber: '11021-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_ChryslerPlymouthDodgeInternationalHarvester').addToCartButton({ 
+    partNumber: '11034-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_InternationalHarvester').addToCartButton({ 
+    partNumber: '11166-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockoutHub_ChromeDana44').addToCartButton({ 
+    partNumber: '302' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6Bolt_19Spline_Flange3_4_TonHub').addToCartButton({ 
+    partNumber: '423' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6Bolt_27Spline_AMCJeep_InternationalHarvester').addToCartButton({ 
+    partNumber: '457' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6Bolt_10SplineHub_AMCJeep_InternationalHarvester').addToCartButton({ 
+    partNumber: '481' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+
+  // Kia
+  // ==========================================================================||
+
+  Shopatron('#atc_6Bolt_27Spline_LockOutHubs_Kia').addToCartButton({ 
+    partNumber: '460' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  // Mazda
+  // ==========================================================================||
+
+  Shopatron('#atc_27Spline_LockOutHub_FordMazda').addToCartButton({ 
+    partNumber: '426' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockOutHub_FordMazda').addToCartButton({ 
+    partNumber: '428' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  // Nissan
+  // ==========================================================================||
+
+  Shopatron('#atc_6Bolt_27SplineHub_Nissan').addToCartButton({ 
+    partNumber: '430' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_6Bolt_28SplineHub_Nissan').addToCartButton({ 
+    partNumber: '435' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  // Rockwell
+  // ==========================================================================||
+
+  Shopatron('#atc_ClassicSelectroLockingHub_FordRockwell_74_83').addToCartButton({ 
+    partNumber: '11038-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_FordRockwell_84_94').addToCartButton({ 
+    partNumber: '1162-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_ClassicSelectroLockingHub_Rockwell').addToCartButton({ 
+    partNumber: '11165-01' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  // Suzuki
+  // ==========================================================================||
+
+  Shopatron('#atc_LockOutHub_SuzukiGeo').addToCartButton({ 
+    partNumber: '436' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+  
+  Shopatron('#atc_LockOutHubs_27Spline').addToCartButton({ 
+    partNumber: '438' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  // Toyota
+  // ==========================================================================||
+
+  Shopatron('#atc_LockoutHub_Toyota_76_85').addToCartButton({ 
+    partNumber: '466' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+  Shopatron('#atc_LockoutHub_ToyotaLandCruiser').addToCartButton({ 
+    partNumber: '490' }, { clickSuccess: function () { checkOutHideShow() },
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // Shopatron 
   // ==========================================================================||
+
+
 
     Shopatron('#quick_cart_div_id').getQuickCart({ cartLink: '/cart' });
     Shopatron('#full_cart_div_id').getCart();
