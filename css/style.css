@@ -13,16 +13,30 @@
 .shptrn_ci_qty input,
 .shptrn_ci_details a:hover,
 .shptrn_atc_button button:hover,
-.shptrn_ci_qty button:hover { color: black; }
+.shptrn_ci_qty button:hover { color: black !important; }
+
+
+
+/* Fonts */
+
+.shptrn_ci_part_num,
+.shptrn_ci_qty button,
+#shptrn_cart_items_header,
+.shptrn_ci_price { font-family: "NimbusSanTCon"; }
+
+
+/* End Fonts */
+
 
 /* Btn styling */
 
 #checkoutBtn,
 .shptrn_ci_qty button,
 .shptrn_atc_button button,
-.shptrn_checkout_button button {
+.shptrn_checkout_button button,
+.shptrn_ci_qty input {
 	line-height: 0px !important;
-	padding: 0px;
+	padding: 0px !important;
 }
 
 .shptrn_atc_button button,
@@ -34,28 +48,7 @@
 	border: 7px solid #f26622;
 }
 
-
-.shptrn_ci_qty { width: 500px; }
-.shptrn_ci_qty button {  
-	height: 15px;
-	border-left: none; 
-	border-top: none;
-	border-bottom: none;
-	font-size: 13px; 
-	font-family: sans-serif !important; 
-}
-.shptrn_ci_qty button:hover { background-color: white; color: #f26622 }
-.shptrn_ci_qty button:nth-child(2) { width: 105px !important; border-right: 1px solid black !important; }
-.shptrn_ci_qty button:nth-child(3) { width: 55px ;border-right: none; }
-
-.shptrn_ci_qty input { 
-	border: 1px solid grey !important;
-	width: 20px !important; 
-	background-color: white !important; 
-	width: 20px;
-	height: 20px;
-}
-.shptrn_ci_qty input, .shptrn_ci_qty button { display: inline-block !important; }
+/* End btn styling */
 
 #checkoutBtn { 
 	width: 120px;
@@ -64,31 +57,62 @@
 	height: 55px;
 	margin-left: 46px !important; 
 	margin-top: 15px;
-
 }
 
 /* Modal */
+
+#shptrn_cart_items_header { 
+	background-color: rgba(111, 105, 106, 1); height: 40px; }
+#shptrn_cart_items_header label { 
+	padding: 7px; 
+	font-size: 18px; 
+	color: rgba(250, 250, 250, 1) !important; 
+}
+#shptrn_ch_part_num { margin-left: 183px !important; }
+#shptrn_ch_item_qty { margin-left: 100px !important; }
+#shptrn_ch_item_price { margin-left: 320px !important; }
+
+
+.shptrn_ci_price { font-size: 17px; font-weight: bolder;  }
+.shptrn_cart_item table { margin-top: 10px !important; }
+.shptrn_ci_qty { width: 360px; }
+.shptrn_ci_qty button {  
+	height: 18px;
+	border-left: none; 
+	border-top: none;
+	border-bottom: none;
+	font-size: 17px; 
+}
+.shptrn_ci_qty button:hover { background-color: white; color: #f26622 !important; }
+.shptrn_ci_qty button:nth-child(2) { width: 105px !important; border-right: 1px solid black !important; }
+.shptrn_ci_qty button:nth-child(3) { width: 55px ;border-right: none; }
+
+.shptrn_ci_qty input { 
+	width: 37px !important;
+	height: 27px !important;
+	border: 1px solid lightgrey !important;
+	border-radius: 0px !important;
+	background-color: white !important;
+	padding-left: 7px !important;
+	margin-right: 7px;
+}
+
+.shptrn_ci_qty input, .shptrn_ci_qty button { display: inline-block !important; }
+
+
 #shptrn_ch_item { margin-left: 10px !important; }
 
-#shptrn_cart_items_header { background-color: rgba(111, 105, 106, 1); height: 40px; }
-#shptrn_cart_items_header label { padding: 7px; font-size: 18px; color:lightgrey; margin-right: 100px; }
-/*#shptrn_ch_part_num {   }
-}*/
 
-
-/*.shptrn_atc_button button {  
-	
-}*/
 .shptrn_ci_image a { width: 0px; height: 80px; }
 .shptrn_ci_image td { width: 1px;  }
 .shptrn_ci_image { 
 	width: 100px; 
 	padding-right: 10px !important;
 }
-.shptrn_ci_part_num { padding-left: 10px; padding-right: 10px; width: 160px;  }
+.shptrn_ci_part_num { width: 170px !important; padding-left: 10px; padding-right: 10px; width: 160px;  }
 .shptrn_cart_item tbody { margin-left: 15px !important; }
 
-.shptrn_ci_details { width: 140px; padding-right: 20px !important;  }
+.shptrn_ci_details { width: 160px; padding-right: 20px !important;  }
 .shptrn_cart_item td { border: none; }
 
 
@@ -98,6 +122,8 @@
 .modal-background { margin-left: 180px; }
 .dialog-width { width: 880px !important; margin-top: 60px !important; }
 .modal-content { border-radius: 0px; }
+
+
 
 /* Quick Cart */
 
