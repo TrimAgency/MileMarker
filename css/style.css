@@ -23,7 +23,7 @@
 .shptrn_ci_part_num { padding-left: 10px; padding-right: 10px; width: 160px;  }
 .shptrn_cart_item tbody { margin-left: 15px !important; }
 
-.shptrn_ci_details a { color: black; }
+.shptrn_ci_details a, .shptrn_ci_details a:hover { color: black; }
 .shptrn_ci_details { width: 140px; padding-right: 20px !important;  }
 .shptrn_cart_item { height: 180px !important; }
 
@@ -36,7 +36,8 @@
 	color: black;
 	font-size: 18px;  
 }
- { border-right: 1px solid black !important; }
+.shptrn_ci_qty button:nth-child(2) { border-right: 1px solid black !important; }
+.shptrn_ci_qty button:nth-child(3) { border-right: none; }
 .shptrn_ci_qty button:hover { 
 	background-color: lightgrey; 
 	color: black; 
@@ -50,8 +51,6 @@
 	height: 20px;
 }
 .shptrn_ci_qty input, .shptrn_ci_qty button { display: inline-block !important; }
-
-
 
 
 .modal-backdrop { background: rgba(10, 10, 10, 0.5) !important; }
@@ -71,6 +70,37 @@
 	margin-left: 88px !important; 
 	margin-top: 15px;
 }
+
+#shptrn_checkout_detail_content { 
+	width: 20%; 
+	float: right; 
+	text-align: right; 
+	margin: 17px;
+}
+.shptrn_cart_price_row span:first-child { 
+	font-size: 19px; 
+	color: rgba(100, 100, 100,1);
+	margin-right: 15px;
+}
+.shptrn_cart_price_row span:last-child { font-size: 25px; color: black; }
+
+.shptrn_checkout_button button { color: black; border: 4px solid #f26622; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
