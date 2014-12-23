@@ -1,26 +1,59 @@
-/*#checkOutDiv {}*/
-
-body { margin: 0px; }
-
-
-#atc button { 
-	font-size: 15px;
-	background: none;
-	border: 5px solid orange; 
-	width: 130px; 
-	height: 60px; 
-}
-#atc button:hover { border: 5px solid grey }
-
-#contShop { 
-	background-color: lightblue; 
-	width: 160px; 
-	height: 50px;  
-	border: 2px solid lightgrey;
-	border-radius: 3px;
-	font-size: 15px;
+#quantity { 
+	color:#d6c8b1; 
+	background: #a29b89;
+	font-size: 38px; 
+	font-family: "NimbusSanTCon Bold";
+	border-radius: 0px;
 }
 
-.shptrn_quick_cart a { text-decoration: none; color: black; font-size: 17px; }
-.shptrn_quick_cart a:hover { color: rgba(60, 60, 60, 1); }
-.nav-wrapper { width: 100%; height: 50px; background-color: orange;}
+/* Modal */
+#shptrn_ch_item { margin-left: 10px !important; }
+
+
+#shptrn_cart_items_header { background-color: #3a3334; height: 40px; }
+#shptrn_cart_items_header label { padding: 7px; font-size: 18px; color:lightgrey; margin-right: 100px; }
+#shptrn_ch_part_num { color: red !important; margin-left: 86px;  }
+}
+
+.shptrn_ci_qty input, .shptrn_ci_qty button { display: table !important; }
+
+.shptrn_ci_image a { width: 0px; height: 80px; }
+.shptrn_ci_image td { width: 1px;  }
+.shptrn_ci_image {  
+	padding-right: 10px !important;
+}
+.shptrn_ci_part_num { padding-left: 10px; padding-right: 10px; width: 100px;  }
+.shptrn_cart_item tbody { margin-left: 15px !important; }
+
+.shptrn_ci_details a { color: black; }
+.shptrn_ci_details { width: 140px; padding-right: 20px !important;  }
+.shptrn_cart_item { height: 180px !important; }
+.shptrn_ci_qty { width: 10px; }
+
+
+.modal-backdrop { background: rgba(10, 10, 10, 0.5) !important; }
+.modal-background { margin-left: 180px; }
+.dialog-width { width: 880px !important; margin-top: 60px !important; }
+.modal-content { border-radius: 0px; }
+
+/* Quick Cart */
+
+.shptrn_quick_label { color: rgba(111, 105, 106, 1); font-size: 18px; }
+.shopatron_content { 
+	padding-top: 10px;
+	padding-left: 10px; 
+}
+#checkoutBtn { 
+	border: 3px solid #f26622 !important; 
+	width: 80px; 
+	font-size: 19px; 
+	height: 65px;
+	margin-left: 88px !important; 
+	margin-top: 15px;
+	
+}
+
+
+
+
+

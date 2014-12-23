@@ -1,34 +1,514 @@
-<!doctype html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://mediacdn.shopatron.com/media/js/product/shopatronAPI-2.4.min.js" id="shopatronCart" type="text/javascript">{"apiKey":"8xyqdath"}</script>
-    <script src="http://mediacdn.shopatron.com/media/js/product/shopatronJST-2.3.min.js" type="text/javascript"></script>
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Product with API Cart | Mile Marker Industries</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="pingback" href="http://trimserver.com/sandbox/xmlrpc.php" />
+    <link href="http://trimserver.com/sandbox/wp-content/themes/marker/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://trimserver.com/sandbox/wp-content/themes/marker/js/plugin/fancybox/jquery.fancybox.css?v=2.1.4" />
+    <link rel="stylesheet" type="text/css" href="http://trimserver.com/sandbox/wp-content/themes/marker/js/plugin/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+    <link rel="stylesheet" type="text/css" href="http://trimserver.com/sandbox/wp-content/themes/marker/js/plugin/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+    <link href="http://trimserver.com/sandbox/wp-content/themes/marker/css/fonts.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="http://trimserver.com/sandbox/wp-content/themes/marker/js/html5.js"></script>
+    <![endif]-->
+    <link rel="alternate" type="application/rss+xml" title="Mile Marker Industries &raquo; Feed" href="http://trimserver.com/sandbox/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mile Marker Industries &raquo; Comments Feed" href="http://trimserver.com/sandbox/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mile Marker Industries &raquo; Product with API Cart Comments Feed" href="http://trimserver.com/sandbox/product2/feed/" />
+<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://trimserver.com/sandbox/wp-includes/css/dashicons.min.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://trimserver.com/sandbox/wp-includes/css/admin-bar.min.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrapstyle-css'  href='http://trimserver.com/sandbox/wp-content/plugins/bootstrap-collapse/css/bootstrap.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fts_powered_by_css-css'  href='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/css/powered-by.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fts_fb_css-css'  href='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/feeds/facebook/css/styles.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fts-font-aweseom-min-css'  href='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/feeds/css/font-awesome.min.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fts_instagram_css_popup-css'  href='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/feeds/instagram/css/magnific-popup.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fts_twitter_css-css'  href='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/feeds/twitter/css/styles.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fts_instagram_css-css'  href='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/feeds/instagram/css/styles.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tp_twitter_plugin_css-css'  href='http://trimserver.com/sandbox/wp-content/plugins/recent-tweets-widget/tp_twitter_plugin.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='rs-settings-css'  href='http://trimserver.com/sandbox/wp-content/plugins/revslider/rs-plugin/css/settings.css?rev=4.1.4&#038;ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-captions-css'  href='http://trimserver.com/sandbox/wp-content/plugins/revslider/rs-plugin/css/dynamic-captions.css?rev=4.1.4&#038;ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-static-css'  href='http://trimserver.com/sandbox/wp-content/plugins/revslider/rs-plugin/css/static-captions.css?rev=4.1.4&#038;ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='http://trimserver.com/sandbox/wp-content/themes/marker/style.css?ver=4.0.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://trimserver.com/sandbox/wp-content/themes/marker/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-content/plugins/bootstrap-collapse/js/bootstrap-collapse.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-content/plugins/bootstrap-collapse/js/bootstrap-transition.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/js/powered-by.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/feeds/instagram/js/magnific-popup.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/feeds/instagram/js/masonry.pkgd.min.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-content/plugins/feed-them-social/feeds/instagram/js/date-format.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?rev=4.1.4&#038;ver=4.0.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?rev=4.1.4&#038;ver=4.0.1'></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://mediacdn.shopatron.com/media/js/product/shopatronAPI-2.4.min.js" id="shopatronCart" type="text/javascript">{"apiKey":"8xyqdath"}</script>
+<script src="http://mediacdn.shopatron.com/media/js/product/shopatronJST-2.3.min.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  </head>
-  <body> 
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://trimserver.com/sandbox/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://trimserver.com/sandbox/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.0.1" />
+<link rel='canonical' href='http://trimserver.com/sandbox/product2/' />
+<link rel='shortlink' href='http://trimserver.com/sandbox/?p=12916' />
 
-    <div class="nav-wrapper">
-      <div class="nav">
+  <style type="text/css">
 
-        <div id="quick_cart_div_id"></div>
+        
 
-      </div>
+.accordion-inner {
+
+  border-top: 1px solid #3f3d45;
+
+  padding: 9px 15px;
+
+}
+
+
+
+.accordion-toggle {
+
+  color: #3f3d45 !important;
+
+  cursor: pointer;
+
+}
+
+.accordion-group {
+
+  border: 1px solid #e9e7e7;
+
+  border-radius: 4px 4px 4px 4px;
+
+  margin-bottom: 2px;
+
+}
+
+
+
+    </style>
+<!-- BEGIN GADWP v4.3.1 Universal Tracking - http://deconf.com/google-analytics-dashboard-wordpress/ -->
+<script type="text/javascript">
+(function($){
+    $(window).load(function() {
+            $('a').filter(function() {
+                return this.href.match(/.*\.(zip|ra*|mp*|avi|flv|mpeg|pdf|doc*|ppt*|xls*|jp*|png|gif|tiff|bmp|txt)/);
+            }).click(function(e) {
+                ga('send','event', 'download', 'click', this.href);
+            });
+            $('a[href^="mailto"]').click(function(e) {
+                ga('send','event', 'email', 'send', this.href);
+             });
+            var loc = location.host.split('.');
+            while (loc.length > 2) { loc.shift(); }
+            loc = loc.join('.');
+            var localURLs = [
+                              loc,
+                              'http://trimserver.com/sandbox'
+                            ];
+            $('a[href^="http"]').filter(function() {
+                for (var i = 0; i < localURLs.length; i++) {
+                    if (this.href.indexOf(localURLs[i]) == -1) return this.href;
+                }
+            }).click(function(e) {
+                ga('send','event', 'outbound', 'click', this.href);
+            });
+    });
+})(jQuery);
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-53683899-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+<!-- END GADWP Universal Tracking -->
+
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css" media="screen">
+  html { margin-top: 32px !important; }
+  * html body { margin-top: 32px !important; }
+  @media screen and ( max-width: 782px ) {
+    html { margin-top: 46px !important; }
+    * html body { margin-top: 46px !important; }
+  }
+</style>
+
+<link href="http://trimserver.com/sandbox/wp-content/themes/marker/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://trimserver.com/sandbox/wp-content/themes/marker/css/plugin/bootstrap-spinner.css" rel="stylesheet">
+<link href="http://trimserver.com/sandbox/wp-content/themes/marker/css/plugin/owl.carousel.css" rel="stylesheet">
+<link href="http://trimserver.com/sandbox/wp-content/themes/marker/css/plugin/owl.theme.css" rel="stylesheet">
+<link href="http://trimserver.com/sandbox/wp-content/themes/marker/css/product.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade modal-background" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog dialog-width">
+    <div class="modal-content">
+      
+        <div id="full_cart_div_id"></div>
+      
+    </div>
+  </div>
+</div>
+    <div class="page-container">
+        <div class="page-sidebar-wrapper">
+            <button class="navbar-toggle collapsed sidebar-navbar-collapse" data-target=".page-sidebar" data-toggle="collapse" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="page-sidebar navbar-collapse collapse">
+                <div class="page-logo">
+                    <a href="http://milemarker.com" title="Mile Marker">
+                        <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/logo.png">
+                    </a>
+                </div>
+                <ul class="page-sidebar-menu" data-slide-speed="200" data-auto-scroll="true">
+                    <li>
+                        <a href="http://milemarker.com/products" target="_self">PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="http://milemarker.com/team-orange" target="_self">TEAM ORANGE</a>
+                    </li>
+                    <li>
+                        <a href="http://milemarker.com/news-room" target="_self">NEWS</a>
+                    </li>
+                    <li>
+                        <a href="http://milemarker.com/company" target="_self">COMPANY</a>
+                    </li>
+                    <li>
+                        <a href="http://milemarker.com/where-to-buy" target="_self">WHERE TO BUY</a>
+                    </li>
+                </ul>
+                  <div id="checkOutDiv" style="display: ;">
+
+                  <div id="quick_cart_div_id"></div>
+
+                  <button id="checkoutBtn" type="button" data-toggle="modal" data-target="#myModal">CHECKOUT</button>
+                </div>  
+
+                <div class="search-content">
+                  <form method="get" id="searchform" action="http://trimserver.com/sandbox/">
+                    <input type="text" value="" name="s" id="s" placeholder="Search" />
+                    <button type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+                <div class="social-content">
+                    <ul class="social-list">
+                        <li>
+                            <a href="https://www.facebook.com/milemarker" target="_blank" title="facebook" class="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/MileMarkerWinch" target="_blank" title="twitter" class="twitter"></a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/milemarker_winch" target="_blank" title="instagram" class="instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-main-wrapper">
+            <section class="product-section">
+                <div class="section-content product-page">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="product-title">SEC8 SCOUT (es)</h1>
+                                <div class="title-icon-content">
+                                    <div class="capacity-icon title-icon pull-left"></div>
+                                    <div class="score-icon title-icon pull-left"></div>
+                                </div>
+                                <ol class="breadcrumb">
+                                    <li><a href="#">PRODUCT</a></li>
+                                    <li><a href="#">TYPE</a></li>
+                                    <li class="active">PRODUCT TITLE</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="product-main-image">
+                                    <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                </div>
+                                <ul class="product-side-list row">
+                                    <li class="col-md-3">
+                                        <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                    </li>
+                                    <li class="col-md-3">
+                                        <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                    </li>
+                                    <li class="col-md-3">
+                                        <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                    </li>
+                                    <li class="col-md-3">
+                                        <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="product-desc-title">This is a product subhead.<br>It is really important.</h2>
+                                <div class="product-desc-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut convallis eros. Fusce vitae hendrerit turpis. Aenean blandit ex id cursus varius. Aenean gravida augue justo. Nunc sit amet hendrerit lacus. Ut in nibh a ipsum egestas venenatis. Praesent purus elit, vulputate vestibulum felis id, tempor consequat mauris. fringilla, consectetur orci sed, pulvinar ante. Vivamus pulvinar suscipit mauris feugiat sollicitudin. Phasellus scelerisque lorem vel nisi fringilla aliquam. Suspendisse quis tellus non tellus dapibus viverra. Pellentesque tellus erat, tristique nec facilisis ac, bibendum non nunc. Duis pellentesque dignissim tortor. Donec feugiat mollis nisl. Suspendisse ante lacus, posuere sit amet dapibus eget, bibendum ut ligula. Donec malesuada sit amet metus a fringilla. Curabitur consectetur libero justo, sit amet tempus orci interdum quis.</p>
+                                    <br>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut convallis eros. Fusce vitae</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p class="product-cost">$1549<span class="decimal">99</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="pull-left">
+                                            <p class="quantity-title">QUANTITY</p>
+                                            <div class="input-group spinner" data-trigger="spinner">
+                                                <input type="text" class="quantity-value" value="1" data-rule="quantity">
+                                                <span class="input-group-btn">
+                                                    <a href="javascript:;" class="spin-up" data-spin="up"></a>
+                                                    <a href="javascript:;" class="spin-down" data-spin="down"></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="pull-left">
+                                            <ul class="product-social-list">
+                                                <li>
+                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-buttons">
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+                                          <div id="atc_SEC8_scout">
+                                            <div id="atc"></div>
+                                          </div>
+
+                                            <button class="small-button black-color-button">ADD TO CART</button>
+                                             
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="small-button black-color-button">FIND A DEALER</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="product-options">
+                                    <div class="row">
+                                        <div class="col-md-6 product-option">
+                                            <div class="product-option-control">
+                                                PRODUCT FEATURE
+                                                <i class="fa fa-caret-down"></i>
+                                            </div>
+                                            <div class="product-option-content">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 product-option">
+                                            <div class="product-option-control">
+                                                PRODUCT DOWNLOADS
+                                                <i class="fa fa-caret-down"></i>
+                                            </div>
+                                            <div class="product-option-content">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 product-option">
+                                            <div class="product-option-control">
+                                                PRODUCT SPECIFICATIONS
+                                                <i class="fa fa-caret-down"></i>
+                                            </div>
+                                            <div class="product-option-content">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 product-option">
+                                            <div class="product-option-control">
+                                                PRODUCT PERFORMANCE
+                                                <i class="fa fa-caret-down"></i>
+                                            </div>
+                                            <div class="product-option-content">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slider-nav-prev"></div>
+                                <div class="slider-nav-next"></div>
+                                <div class="related-product-content">
+                                    <h2 class="related-pro-title">RELATED PRODUCTS</h2>
+                                    <div class="related-pro-list owl-carousel owl-theme">
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                        <div class="item">
+                                            <img src="http://trimserver.com/sandbox/wp-content/themes/marker/images/product/product_main_image.png" />
+                                            <p>Product Name</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
-    <div id="checkOutDiv" style="display: none;">
-      <button id="contShop" onClick="hideCheckOut()">Continue Shopping</button>
-      <a href="checkOut.html" id="checkOutBtn">Check out</a>
-    </div><br>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="http://trimserver.com/sandbox/wp-content/themes/marker/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://trimserver.com/sandbox/wp-content/themes/marker/bootstrap/js/bootstrap.min.js"></script>
+<script src="http://trimserver.com/sandbox/wp-content/themes/marker/js/plugin/jquery.spinner.js"></script>
+<script src="http://trimserver.com/sandbox/wp-content/themes/marker/js/plugin/owl.carousel.js"></script>
 
-    <div id="atc" style="display: inline-block; width: 800px; height: 500px;">
-      <div style="width: 200px;" id="atc"></div>
-    </div>
+<script type="text/javascript">
 
-  </body>
+    $('.product-option-control').on('click', function(e) {
+        var product_option = $(this).closest('.product-option');
+        if(product_option.hasClass('active')) {
+            product_option.removeClass('active');
+        } else {
+            product_option.addClass('active');
+        }
+    });
+
+    $(document).ready(function ($) {
+        var owl = $(".related-pro-list");
+        owl.owlCarousel({
+            pagination: false,
+            items : 6, //10 items above 1000px browser width
+            itemsDesktop : [1000,5], //5 items between 1000px and 901px
+            itemsDesktopSmall : [900,3], // betweem 900px and 601px
+            itemsTablet: [600,2]
+        });
+        // Custom Navigation Events
+        $(".slider-nav-next").click(function(){
+            owl.trigger('owl.next');
+        })
+        $(".slider-nav-prev").click(function(){
+            owl.trigger('owl.prev');
+        })
+    });
+
+</script>
+
+
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-includes/js/admin-bar.min.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-includes/js/comment-reply.min.js?ver=4.0.1'></script>
+<script type='text/javascript' src='http://trimserver.com/sandbox/wp-content/themes/marker/js/navigation.js?ver=20140711'></script>
+  <script type="text/javascript">
+    (function() {
+      var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+      request = true;
+
+      b[c] = b[c].replace( rcs, ' ' );
+      b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+    }());
+  </script>
+      <div id="wpadminbar" class="nojq nojs" role="navigation">
+      <a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+      <div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Top navigation toolbar." tabindex="0">
+        <ul id="wp-admin-bar-root-default" class="ab-top-menu">
+    <li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://trimserver.com/sandbox/wp-admin/about.php" title="About WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+    <li id="wp-admin-bar-about"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/about.php">About WordPress</a>   </li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+    <li id="wp-admin-bar-wporg"><a class="ab-item"  href="https://wordpress.org/">WordPress.org</a>   </li>
+    <li id="wp-admin-bar-documentation"><a class="ab-item"  href="http://codex.wordpress.org/">Documentation</a>    </li>
+    <li id="wp-admin-bar-support-forums"><a class="ab-item"  href="https://wordpress.org/support/">Support Forums</a>   </li>
+    <li id="wp-admin-bar-feedback"><a class="ab-item"  href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a>    </li></ul></div>    </li>
+    <li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://trimserver.com/sandbox/wp-admin/">Mile Marker Industries</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+    <li id="wp-admin-bar-dashboard"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/">Dashboard</a>    </li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu">
+    <li id="wp-admin-bar-themes"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/themes.php">Themes</a>    </li>
+    <li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/customize.php?url=http%3A%2F%2Ftrimserver.com%2Fsandbox%2Fproduct2%2F">Customize</a>    </li>
+    <li id="wp-admin-bar-widgets"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/widgets.php">Widgets</a>   </li>
+    <li id="wp-admin-bar-menus"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/nav-menus.php">Menus</a>   </li>
+    <li id="wp-admin-bar-background"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/themes.php?page=custom-background">Background</a>   </li>
+    <li id="wp-admin-bar-header"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/themes.php?page=custom-header">Header</a>   </li></ul></div>    </li>
+    <li id="wp-admin-bar-updates"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/update-core.php" title="3 Theme Updates"><span class="ab-icon"></span><span class="ab-label">3</span><span class="screen-reader-text">3 Theme Updates</span></a>   </li>
+    <li id="wp-admin-bar-comments"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/edit-comments.php" title="10 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-10">10</span></a>   </li>
+    <li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://trimserver.com/sandbox/wp-admin/post-new.php" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+    <li id="wp-admin-bar-new-post"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/post-new.php">Post</a>    </li>
+    <li id="wp-admin-bar-new-media"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/media-new.php">Media</a>   </li>
+    <li id="wp-admin-bar-new-page"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/post-new.php?post_type=page">Page</a>   </li>
+    <li id="wp-admin-bar-new-user"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/user-new.php">User</a>    </li></ul></div>    </li>
+    <li id="wp-admin-bar-edit"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/post.php?post=12916&#038;action=edit">Edit Page</a>   </li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+    <li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://trimserver.com/sandbox/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150" /><input type="submit" class="adminbar-button" value="Search"/></form></div>   </li>
+    <li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item"  aria-haspopup="true" href="http://trimserver.com/sandbox/wp-admin/profile.php" title="My Account">Howdy, developer<img alt='' src='http://0.gravatar.com/avatar/645ca339608c0b03ad0a68c386a92fcb?s=26&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D26&amp;r=G' class='avatar avatar-26 photo' height='26' width='26' /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+    <li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://trimserver.com/sandbox/wp-admin/profile.php"><img alt='' src='http://0.gravatar.com/avatar/645ca339608c0b03ad0a68c386a92fcb?s=64&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D64&amp;r=G' class='avatar avatar-64 photo' height='64' width='64' /><span class='display-name'>developer</span></a>    </li>
+    <li id="wp-admin-bar-edit-profile"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-admin/profile.php">Edit My Profile</a>    </li>
+    <li id="wp-admin-bar-logout"><a class="ab-item"  href="http://trimserver.com/sandbox/wp-login.php?action=logout&#038;_wpnonce=4b037d4955">Log Out</a>   </li></ul></div>    </li></ul>      </div>
+            <a class="screen-reader-shortcut" href="http://trimserver.com/sandbox/wp-login.php?action=logout&#038;_wpnonce=4b037d4955">Log Out</a>
+          </div>
+
+    </body>
 </html>
-
-
-<!-- jyoapb0u -->
