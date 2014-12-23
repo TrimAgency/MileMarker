@@ -8,11 +8,54 @@
 
 /* Hover button color:; */
 
-.shptrn_ci_details a, 
+.shptrn_ci_details a,
+.shptrn_ci_qty button,
+.shptrn_ci_qty input,
 .shptrn_ci_details a:hover,
-.shptrn_atc_button button:hover { color: black; }
+.shptrn_atc_button button:hover,
+.shptrn_ci_qty button:hover { color: black; }
 
 /* Btn styling */
+
+#checkoutBtn,
+.shptrn_ci_qty button,
+.shptrn_atc_button button,
+.shptrn_checkout_button button {
+	line-height: 0px !important;
+	padding: 0px;
+}
+
+.shptrn_atc_button button,
+.shptrn_checkout_button button {
+  color: black;
+  width: 174px;
+	height: 60px;
+	font-size: 34px;
+	border: 7px solid #f26622;
+}
+
+
+.shptrn_ci_qty { width: 500px; }
+.shptrn_ci_qty button {  
+	height: 15px;
+	border-left: none; 
+	border-top: none;
+	border-bottom: none;
+	font-size: 13px; 
+	font-family: sans-serif !important; 
+}
+.shptrn_ci_qty button:hover { background-color: white; color: #f26622 }
+.shptrn_ci_qty button:nth-child(2) { width: 105px !important; border-right: 1px solid black !important; }
+.shptrn_ci_qty button:nth-child(3) { width: 55px ;border-right: none; }
+
+.shptrn_ci_qty input { 
+	border: 1px solid grey !important;
+	width: 20px !important; 
+	background-color: white !important; 
+	width: 20px;
+	height: 20px;
+}
+.shptrn_ci_qty input, .shptrn_ci_qty button { display: inline-block !important; }
 
 #checkoutBtn { 
 	width: 120px;
@@ -22,24 +65,6 @@
 	margin-left: 46px !important; 
 	margin-top: 15px;
 
-}
-
-#checkoutBtn,
-.shptrn_atc_button button,
-.shptrn_checkout_button button {
-	line-height: 0px !important;
-	font-family: "Swiss911";
-	padding: 0px;
-}
-
-
-.shptrn_atc_button button,
-.shptrn_checkout_button button {
-  color: black;
-  width: 174px;
-	height: 60px;
-	font-size: 34px;
-	border: 7px solid #f26622;
 }
 
 /* Modal */
@@ -67,30 +92,6 @@
 .shptrn_cart_item td { border: none; }
 
 
-.shptrn_ci_qty { width: 500px; }
-.shptrn_ci_qty button { 
-	width: 50px !important; 
-	border-left: none; 
-	border-top: none;
-	border-bottom: none;
-	color: black;
-	font-size: 18px;  
-}
-.shptrn_ci_qty button:nth-child(2) { border-right: 1px solid black !important; }
-.shptrn_ci_qty button:nth-child(3) { border-right: none; }
-.shptrn_ci_qty button:hover { 
-	background-color: lightgrey; 
-	color: black; 
-}
-.shptrn_ci_qty input { 
-	border: 1px solid grey !important;
-	width: 20px !important; 
-	background-color: white !important; 
-	color: black !important;
-	width: 20px;
-	height: 20px;
-}
-.shptrn_ci_qty input, .shptrn_ci_qty button { display: inline-block !important; }
 
 
 .modal-backdrop { background: rgba(10, 10, 10, 0.5) !important; }
