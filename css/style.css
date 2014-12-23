@@ -1,10 +1,16 @@
 #quantity { 
-	color:#d6c8b1; 
+	color: #d6c8b1; 
 	background: #a29b89;
 	font-size: 38px; 
 	font-family: "NimbusSanTCon Bold";
 	border-radius: 0px;
 }
+
+/* Hover button color:; */
+
+.shptrn_ci_details a, 
+.shptrn_ci_details a:hover,
+.shptrn_atc_button button:hover { color: black; }
 
 /* Modal */
 #shptrn_ch_item { margin-left: 10px !important; }
@@ -13,7 +19,16 @@
 #shptrn_cart_items_header label { padding: 7px; font-size: 18px; color:lightgrey; margin-right: 100px; }
 /*#shptrn_ch_part_num {   }
 }*/
-
+.shptrn_atc_button button { 
+	line-height: 0px !important; 
+	color: black; 
+	width: 174px;
+	height: 60px;
+	font-size: 34px;
+	padding: 0px;
+	border: 7px solid #f26622;
+	font-family: "Swiss911";
+}
 .shptrn_ci_image a { width: 0px; height: 80px; }
 .shptrn_ci_image td { width: 1px;  }
 .shptrn_ci_image { 
@@ -23,9 +38,9 @@
 .shptrn_ci_part_num { padding-left: 10px; padding-right: 10px; width: 160px;  }
 .shptrn_cart_item tbody { margin-left: 15px !important; }
 
-.shptrn_ci_details a, .shptrn_ci_details a:hover { color: black; }
 .shptrn_ci_details { width: 140px; padding-right: 20px !important;  }
-.shptrn_cart_item { height: 180px !important; }
+.shptrn_cart_item td { border: none; }
+
 
 .shptrn_ci_qty { width: 500px; }
 .shptrn_ci_qty button { 
@@ -80,7 +95,7 @@
 .shptrn_cart_price_row span:first-child { 
 	font-size: 19px; 
 	color: rgba(100, 100, 100,1);
-	margin-right: 15px;
+	margin-right: 10px;
 }
 .shptrn_cart_price_row span:last-child { font-size: 25px; color: black; }
 
