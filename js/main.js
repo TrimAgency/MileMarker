@@ -1,11 +1,7 @@
   
   $(document).ready(function() {
-
-
-
-    
-
-
+    // var x = $('.quantity-title').css("color", "red");
+    // $('.shptrn_quantity').append('<h1>Test complete</h1>');
 
     function checkOutHideShow() { 
       var checkOutDiv = document.getElementById('checkOutDiv');
@@ -875,10 +871,12 @@
   // Functionality / CSS w Javascript
   // ==========================================================================||
 
-  function hideCheckOut() {
-    var hideCheckOutDiv = document.getElementById('checkOutDiv');
-    hideCheckOutDiv.style.display = "none";
-  }
+  // function hideCheckOut() {
+  //   var hideCheckOutDiv = document.getElementById('checkOutDiv');
+  //   hideCheckOutDiv.style.display = "none";
+  // }
+  
+
 });
 
 
