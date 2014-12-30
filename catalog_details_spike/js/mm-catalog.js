@@ -1,5 +1,5 @@
 var $ = jQuery;
-// var s = underscore.string;
+var _s = _.string;
 
 function getDetails(partNumber) {
   Shopatron.getProduct(
@@ -19,8 +19,7 @@ function getDetails(partNumber) {
           image: product.image,
           name: product.name
         }
-        // $('div.product-desc-content').text(s.unescapeHTML(pr.description))
-        $('div.product-desc-content').text(pr.description)
+        $('div.product-desc-content').text(_s.unescapeHTML(pr.description))
       }
     }
   )
