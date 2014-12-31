@@ -39,5 +39,19 @@ $(document).ready(
     var partNumber = $('[data-partNumber]').attr('data-partNumber')
     console.log("Looking up " + partNumber);
     getDetails(partNumber);
+
+    Shopatron('#cart-button').addToCartButton(
+      { 
+        partNumber: partNumber 
+      }, 
+      { 
+        clickSuccess: function () { checkOutHideShow() },
+      }
+    );
   }
 )
+
+
+
+
+
