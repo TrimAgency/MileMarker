@@ -2,6 +2,7 @@ var $ = jQuery;
 var _s = _.string;
 
 function getDetails(partNumber) {
+  var pr;
   Shopatron.getProduct(
     {
       partNumber: partNumber
@@ -14,12 +15,15 @@ function getDetails(partNumber) {
         }
       },
       success: function (product, text) {
-        var pr = {
+        pr = {
           description: product.description,
           image: product.image,
-          name: product.name
+          name: product.name,
+          price: product.price
         }
+        $('h2.product-desc-title').text(_s.unescapeHTML(pr.name))
         $('div.product-desc-content').text(_s.unescapeHTML(pr.description))
+        $('p.product-cost').text('$' + _s.unescapeHTML(pr.price))
       }
     }
   )
@@ -31,6 +35,5 @@ $(document).ready(
     var partNumber = $('[data-partNumber]').attr('data-partNumber')
     console.log("Looking up " + partNumber);
     getDetails(partNumber);
-    console.log(pr);
   }
 )
