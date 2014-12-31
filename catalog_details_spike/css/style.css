@@ -41,7 +41,8 @@
 .shptrn_atc_button button:hover,
 .shptrn_ci_qty button:hover,
 .shptrn_quantity label,
- .shptrn_checkout_button button:hover { color: black !important; }
+.shptrn_checkout_button button:hover,
+.shptrn_no_items_in_cart  { color: black !important; }
 
 /* Fonts 
 ============================================== */
@@ -53,7 +54,8 @@
 .shptrn_quantity label,
 .shptrn_quick_label,
 .shptrn_ci_details a,
-.shptrn_cart_price_row span:last-child  { font-family: "NimbusSanTCon" !important; }
+.shptrn_cart_price_row span:last-child,
+.shptrn_no_items_in_cart  { font-family: "NimbusSanTCon" !important; }
 #shptrn_cart_items_header label { font-weight: 100; }
  
 /* Upcase and Nimbus
@@ -115,6 +117,8 @@
 
 /* Modal
 ============================================== */
+
+.shptrn_no_items_in_cart { font-size: 20px; padding: 15px; }
 
 #shptrn_cart_items_header { 
 	background-color: rgba(111, 105, 106, 1); height: 40px; }
