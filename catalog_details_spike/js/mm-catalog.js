@@ -5,6 +5,7 @@ function insertDetails(details) {
   $('p.product-cost').text('$' + _s.unescapeHTML(details.price))
   $('h2.product-desc-title').text(_s.unescapeHTML(details.name))
   $('div.product-desc-content').text(_s.unescapeHTML(details.description))
+  $('div.product-main-image').innerHTML = '<img src=' + details.image  + '/>';
 }
 
 function getDetails(partNumber) {
