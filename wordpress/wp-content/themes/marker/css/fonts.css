@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Swiss911";
+    src: url('../fonts/N0tt0106m.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "NimbusSanTCon";
+    src: url('../fonts/N019043T.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: "NimbusSanTCon Bold";
+    src: url('../fonts/N019044T.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: "OractorStd";
+    src: url('../fonts/OratorStd.otf');
+}

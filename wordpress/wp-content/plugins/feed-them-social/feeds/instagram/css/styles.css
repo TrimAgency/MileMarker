@@ -1,0 +1,83 @@
+.fts-instagram-wrap {
+    padding: 0;
+}
+.fts-instagram-wrap .instagram-info {
+    padding: 20px;
+    word-wrap: break-word;
+    font-size: 22px;
+    line-height: 26px;
+    height: 300px;
+    font-family: "ProximaNovaReg";
+    position: relative;
+    cursor: pointer;
+}
+.fts-instagram-wrap .instagram-info .fts-instagram-user-name,
+.fts-instagram-wrap .instagram-info .fts-instagram-text,
+.fts-instagram-wrap .instagram-info .fts-instagram-time {
+    opacity: 0;
+}
+.fts-instagram-wrap .instagram-info:hover .fts-instagram-user-name,
+.fts-instagram-wrap .instagram-info:hover .fts-instagram-text,
+.fts-instagram-wrap .instagram-info:hover .fts-instagram-time {
+    opacity: 1;
+}
+.fts-instagram-wrap .instagram-info:hover .fts-instagram-image {
+    opacity: 0.5;
+}
+.fts-instagram-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 1;
+}
+
+.fts-instagram-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.fts-instagram-user-name {
+    float: none;
+    margin-top: 10px;
+    margin-left: 70px;
+    font-family: "ProximaNovaReg";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fts-instagram-user-name > a,
+.fts-instagram-user-name > a:hover {
+    color: #bfb57b;
+    font-family: "ProximaNovaReg";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fts-instagram-text {
+    clear: both;
+    margin-top: 25px;
+    font-family: "ProximaNovaReg";
+    font-size: 18px;
+    color: #FFFFFF;
+    height: 200px;
+    overflow: hidden;
+}
+
+.fts-instagram-text > a,
+.fts-instagram-text > a:hover {
+    color: #bfb57b;
+    text-decoration: underline;
+    font-family: "ProximaNovaBold";
+}
+
+.fts-instagram-time {
+    font-family: "ProximaNovaReg";
+    font-size: 14px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}

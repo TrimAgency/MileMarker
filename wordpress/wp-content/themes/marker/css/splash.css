@@ -1,0 +1,378 @@
+.page-content-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.page-content-wrapper .splash-page-content {
+    padding: 60px 0px 75px 250px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+h1.content-title {
+    font-family: "Swiss911";
+    font-size: 90px;
+    color: #ffffff;
+}
+
+.content-title-divider {
+    background-color: #f26622;
+    width: 290px;
+    height: 10px;
+}
+
+.top-logo {
+	margin-top: 20px;
+}
+
+.btn_see_gator {
+    left: 250px;
+    bottom: 145px;
+    border: 10px solid #f26622;
+    position: absolute;
+    font-family: "Swiss911";
+    font-size: 34px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 228px;
+    height: 93px;
+    line-height: 73px;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+}
+
+.btn_see_gator:hover {
+    background-color: #f26622;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.btn_play_button {
+    background: url("../images/play_button.png") no-repeat scroll 0 0 transparent;
+    width: 147px;
+    height: 147px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 0;
+    margin-top: -147px;
+}
+
+.btn_play_button:hover {
+    background: url("../images/play_button_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+.page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #f26622;
+    z-index: 11;
+}
+
+.social-content {
+    background-color: #3a3334;
+    width: 181px;
+    height: 100%;
+    padding-left: 25px;
+    padding-top: 15px;
+    float: left;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    float: left;
+}
+
+.social-list li {
+    float: left;
+    margin-right: 35px;
+}
+
+.social-list li:last-child {
+    margin-right: 0;
+}
+
+.social-list li a {
+    display: block;
+}
+
+.social-list li .facebook {
+    background: url("../images/facebook.png") no-repeat scroll 0 0 transparent;
+    width: 13px;
+    height: 29px;
+}
+
+.social-list li .facebook:hover {
+    background: url("../images/facebook_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+.social-list li .twitter {
+    background: url("../images/twitter.png") no-repeat scroll 0 0 transparent;
+    width: 27px;
+    height: 29px;
+}
+
+.social-list li .twitter:hover {
+    background: url("../images/twitter_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+.social-list li .instagram {
+    background: url("../images/instagram.png") no-repeat scroll 0 0 transparent;
+    width: 26px;
+    height: 29px;
+}
+
+.social-list li .instagram:hover {
+    background: url("../images/instagram_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+.bottom-nav-content {
+    float: left;
+    width: calc(100% - 181px);
+}
+
+.bottom-nav-content .bottom-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 443px;
+    margin: 0 auto;
+}
+
+.bottom-nav-content .bottom-nav li {
+    float: left;
+}
+
+.bottom-nav-content .bottom-nav li.divider {
+    background: url("../images/footer_divider.png") no-repeat scroll 0 0 transparent;
+    width: 55px;
+    height: 70px;
+    display: block;
+}
+
+.bottom-nav-content .bottom-nav li a {
+    font-family: "Swiss911";
+    color: #231f20;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+.bottom-nav-content .bottom-nav li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.bottom-logo {
+    position: absolute;
+    right: 25px;
+    margin: 14px auto;
+}
+
+.btn_team_orange {
+    background: url("../images/bottom_logo.png") no-repeat scroll 0 0 transparent;
+    width: 191px;
+    height: 44px;
+    display: block;
+}
+
+.btn_team_orange:hover {
+    background: url("../images/bottom_logo_hover.png") no-repeat scroll 0 0 transparent;
+}
+
+#bg_splash {
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -90;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.sidebar-navbar-collapse {
+    float: none;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    z-index: 20;
+}
+
+.sidebar-navbar-collapse .icon-bar {
+    background-color: #f26622;
+}
+
+.bottom-navbar-collapse {
+    border-color: #231f20;
+    float: none;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+.bottom-navbar-collapse .icon-bar {
+    background-color: #231f20;
+}
+
+@media (max-width: 1279px) {
+    h1.content-title {
+        font-size: 60px;
+    }
+
+    .btn_play_button {
+        left: auto;
+        margin: 60px auto 0;
+        position: relative;
+        top: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .page-content-wrapper .splash-page-content {
+        padding: 20px;
+    }
+
+    .page-sidebar-wrapper .page-sidebar {
+        width: 100%;
+        position: fixed;
+        top: 45px;
+        z-index: 100;
+    }
+
+    .page-sidebar-wrapper .page-sidebar .page-logo {
+        background-color: #f26622;
+    }
+
+    .bottom-nav-content {
+        width: 100%;
+        background-color: #f26622;
+        margin-top: -150px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bottom-nav-content .bottom-nav {
+        width: 100%;
+    }
+
+    .bottom-nav-content .bottom-nav li {
+        width: 100%;
+    }
+
+    .bottom-nav-content .bottom-nav li a {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .bottom-nav-content .bottom-nav li.divider {
+        display: none;
+    }
+
+    .btn_see_gator {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        margin: 60px auto 115px;
+    }
+
+    .social-content {
+        display: none;
+    }
+
+    .bottom-logo {
+        position: relative;
+        width: 191px;
+        height: 44px;
+        right: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    h1.content-title {
+        font-size: 55px;
+    }
+
+    .content-title-divider {
+        width: 80%;
+        height: 8px;
+    }
+
+    .top-logo {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .btn_play_button,
+    .btn_play_button:hover {
+        margin: 45px auto 0;
+        width: 100px;
+        height: 100px;
+        background-size: 100%;
+    }
+
+    .btn_see_gator {
+        width: 182px;
+        height: 75px;
+        border-width: 8px;
+        font-size: 27px;
+        line-height: 59px;
+        margin: 45px auto 115px;
+    }
+}
+
+@media (max-width: 320px) {
+    h1.content-title {
+        font-size: 40px;
+    }
+
+    .content-title-divider {
+        width: 70%;
+        height: 7px;
+    }
+
+    .top-logo {
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    .btn_play_button,
+    .btn_play_button:hover {
+        margin: 20px auto 0;
+        width: 100px;
+        height: 100px;
+        background-size: 100%;
+    }
+
+    .btn_see_gator {
+        width: 160px;
+        height: 65px;
+        border-width: 7px;
+        font-size: 24px;
+        line-height: 49px;
+        margin: 20px auto 115px;
+    }
+}
