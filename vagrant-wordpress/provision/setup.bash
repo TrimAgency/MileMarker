@@ -93,13 +93,21 @@ chmod 750 ${WP_CLI}
 mv ${WP_CLI} /usr/local/bin/
 sudo cp /vagrant/provision/user/wp-cli.yml ${HOME}/
 
+echo 'Installing WP customizations' 
+wp-api plugin install advanced-custom-fields
+wp-api plugin activate advanced-custom-fields
+cp -r /vagrant/provision/wordpress/* /var/www/${SITENAME}/html/
+wp-api plugin activate mm-products
+
 
 # Add authentication salts from the Wordpress API
+echo 'Setting up WP security'
 SALT=$(curl -L --silent https://api.wordpress.org/secret-key/1.1/salt/)
 STRING='put your unique phrase here'
 printf '%s\n' "g/$STRING/d" a "$SALT" . w | ed -s /tmp/wordpress/wp-config.php
 
 # Move Wordpress to appropriate directory and set file permissions
+echo 'Finalizing WP install'
 SITEPATH=/var/www/$SITENAME
 sudo mkdir -p $SITEPATH/html
 sudo rsync -aqP /tmp/wordpress/ $SITEPATH/html
@@ -108,6 +116,7 @@ sudo chown -R $USER:www-data $SITEPATH/*
 rm -r /tmp/wordpress
 
 # Setup file and directory permissions on Wordpress
+echo 'Fixing permissions for WP'
 sudo find $SITEPATH/html -type d -exec chmod 0755 {} \;
 sudo find $SITEPATH/html -type f -exec chmod 0644 {} \;
 sudo chmod 0640 $SITEPATH/html/wp-config.php
