@@ -91,6 +91,7 @@ curl -L --silent https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/w
 chown root:vagrant ${WP_CLI}
 chmod 750 ${WP_CLI}
 mv ${WP_CLI} /usr/local/bin/
+sudo cp /vagrant/provision/user/wp-cli.yml ${HOME}/
 
 
 # Add authentication salts from the Wordpress API
