@@ -123,21 +123,12 @@ sudo chmod 0640 $SITEPATH/html/wp-config.php
 
 echo 'Installing plugins and theme'
 
-ln -s /vagrant/provision/wordpress/wp-content/plugins/mm-products /var/www/localhost/html/wp-content/plugins/
-ln -s /vagrant/provision/wordpress/wp-content/themes/milemarker /var/www/localhost/html/wp-content/themes/
+cp -r /vagrant/provision/wordpress/wp-content/plugins/mm-products /var/www/localhost/html/wp-content/plugins/
+cp -r /vagrant/provision/wordpress/wp-content/themes/milemarker /var/www/localhost/html/wp-content/themes/
 
-wp-cli core install   \
-  --url="http://localhost" \
-  --title="Test Site" \
-  --admin_user="testadmin" \
-  --admin_password="foobar" \
-  --admin_email="testadmin@example.com"
-
-wp-cli plugin install \
-  advanced-custom-fields \
-
-wp-cli plugin activate \
-  advanced-custom-fields \
-  mm-products
+echo 'Fixing permissions for WP'
+sudo find $SITEPATH/html -type d -exec chmod 0755 {} \;
+sudo find $SITEPATH/html -type f -exec chmod 0644 {} \;
+sudo chmod 0640 $SITEPATH/html/wp-config.php
 
 echo "Success! Navigate to your website's URL to finish the setup..."
