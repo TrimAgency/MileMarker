@@ -28,6 +28,26 @@
     );
   }
 
+  add_filter('template_include', 'custom_template_include');
+
+  function custom_template_include($template) {
+    $custom_template_location = '/templates/';
+
+    if ( get_post_type () ) {
+      if ( is_archive() ) :
+        if(file_exists(get_template_directory() . $custom_template_location . 'archive-' . get_post_type() . '.php'))
+        return get_template_directory() . $custom_template_location . 'archive-' . get_post_type() . '.php';
+      endif;
+
+      if ( is_single() ) :
+        if(file_exists(get_template_directory() . $custom_template_location . 'single-' . get_post_type() . '.php'))
+        return get_template_directory() . $custom_template_location . 'single-' . get_post_type() . '.php';
+      endif;
+    }
+
+    return $template;
+  }
+
   // Configure Advanced Custom Fields plugin
   if (function_exists("register_field_group")) {
     register_field_group(
