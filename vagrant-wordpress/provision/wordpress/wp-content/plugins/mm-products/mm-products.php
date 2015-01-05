@@ -31,7 +31,7 @@
   add_filter('template_include', 'custom_template_include');
 
   function custom_template_include($template) {
-    $custom_template_location = '/templates/';
+    $custom_template_location = '/page-templates/';
 
     if ( get_post_type () ) {
       if ( is_archive() ) :

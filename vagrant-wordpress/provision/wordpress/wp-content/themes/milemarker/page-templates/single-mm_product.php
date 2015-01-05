@@ -6,15 +6,29 @@
 
 get_header(); ?>
 
+
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js'></script>
+<script src="http://mediacdn.shopatron.com/media/js/product/shopatronAPI-2.4.min.js" 
+        id="shopatronCart" 
+        type="text/javascript">
+  {"apiKey":"8xyqdath"}
+</script>
+<script src="http://mediacdn.shopatron.com/media/js/product/shopatronJST-2.3.min.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/mm-catalog.js" type="text/javascript"></script>
+
 <link href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css" rel="stylesheet">
 <link href="<?php echo get_template_directory_uri(); ?>/css/plugin/bootstrap-spinner.css" rel="stylesheet">
 <link href="<?php echo get_template_directory_uri(); ?>/css/plugin/owl.carousel.css" rel="stylesheet">
 <link href="<?php echo get_template_directory_uri(); ?>/css/plugin/owl.theme.css" rel="stylesheet">
 <link href="<?php echo get_template_directory_uri(); ?>/css/product.css" rel="stylesheet">
 
+<meta name="keywords" content="<?php the_field('keywords'); ?>" />
+<meta name="description" content="<?php the_field('description'); ?>" />
+
 </head>
 
-<body>
+<body data-partNumber="<?php the_field('partNumber'); ?>">
     <div class="page-container">
         <div class="page-sidebar-wrapper">
             <button class="navbar-toggle collapsed sidebar-navbar-collapse" data-target=".page-sidebar" data-toggle="collapse" type="button">
