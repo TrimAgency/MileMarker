@@ -1,11 +1,12 @@
   
   $(document).ready(function() {
-    // var x = $('.quantity-title').css("color", "red");
-    // $('.shptrn_quantity').append('<h1>Test complete</h1>');
+
+
+
 
     function checkOutHideShow() { 
-      var checkOutDiv = document.getElementById('checkOutDiv');
-      checkOutDiv.style.display = "";
+      var checkOutCart = document.getElementById('checkOutCart');
+      checkOutCart.style.display = "";
     }
 
   // Winches Hydraulic

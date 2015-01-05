@@ -216,12 +216,12 @@
                     </li>
                 </ul>
 
-                <div id="checkOutDiv" style="display: ;">
+                <div id="checkOutCart" style="display: none;">
                   <div id="cartImg"></div>
                   <div id="quick_cart_div_id"></div>
                   <button id="checkoutBtn" type="button" data-toggle="modal" data-target="#myModal">CHECKOUT</button>
                 </div>
-
+                <div id="arrowHead" style="display: none;">ADDED TO CART</div>
                 <div class="search-content">
                   <form method="get" id="searchform" action="http://trimserver.com/sandbox/">
                     <input type="text" value="" name="s" id="s" placeholder="Search" />
@@ -260,6 +260,7 @@
                                     <li class="active">PRODUCT TITLE</li>
                                 </ol>
                             </div>
+
                         </div>
                         <div class="row">
                             <div class="col-md-6">
@@ -321,7 +322,7 @@
                                 <div class="product-buttons">
                                     <div class="row">
                                         <div class="col-md-6">
-                                          <div id="cart-button"></div>
+                                          <div onClick="revealCart()" id="cart-button"></div>
                                         </div>
                                         <div class="col-md-6">
                                             <button class="small-button black-color-button">FIND A DEALER</button>
