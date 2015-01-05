@@ -1,8 +1,22 @@
-/**
- * Created by HansHeiberg on 11/12/14.
- */
+var $ = jQuery;
+var _s = _.string;
 
 $(document).ready(function() {
+
+    // Get product details from Shopatron
+    // partNumber is a unique ID embedded into the page
+    var partNumber = $('[data-partNumber]').attr('data-partNumber');
+
+    getDetails(partNumber);
+
+    Shopatron('#cart-button').addToCartButton(
+      {
+        partNumber: partNumber
+      },
+      {
+        clickSuccess: function () { revealCart() },
+      }
+    );
 
     /* timeup */
     $('.winch').counterUp();
@@ -22,13 +36,13 @@ $(document).ready(function() {
             }
         }
     });
-	
-	animation();
+
+  animation();
 
 });
 
 function animation() {
-	var controller = new ScrollMagic();
+  var controller = new ScrollMagic();
     new ScrollScene({offset: 267, triggerElement: "#gator_start_trigger", duration: 1300, triggerHook: 1})
         .setPin("#gator_rope_winch")
         .addTo(controller)
@@ -53,3 +67,74 @@ function animation() {
      new ScrollScene({offset: 580, triggerElement: "#trade_sec4", triggerHook: 1}).setTween(TweenMax.fromTo("#trade_sec4", 0.5, {"opacity": 0}, {"opacity": 1})).addTo(controller);
 }
 
+function checkOutHideShow() {
+  var checkOutCart = document.getElementById('checkOutCart');
+  checkOutCart.style.display = "";
+}
+
+function enlargeImage(url) {
+  var enlargedImage = '<img src=' + url + '>';
+  var enlargedImageDiv = $('div.product-main-image');
+
+  enlargedImageDiv.html(enlargedImage);
+}
+
+function revealCart() {
+  var checkOutCart = document.getElementById('checkOutCart');
+  checkOutCart.style.display = "";
+
+  var arrowHead = document.getElementById('arrowHead');
+  arrowHead.style.display = "";
+
+  $('#arrowHead').delay(2000).fadeOut(2000);
+}
+
+function insertDetails(details) {
+  $('p.product-cost').text('$' + _s.unescapeHTML(details.price))
+  $('h2.product-desc-title').text(_s.unescapeHTML(details.name))
+  $('div.product-desc-content').text(_s.unescapeHTML(details.description))
+  $('div.product-main-image').html('<img src=' + details.image  + '/>')
+
+  var productImages = details.images;
+  var images = "";
+
+  for (var i = 0; i < productImages.length; i++) {
+    var url = productImages[i].url;
+
+    if (url != undefined) {
+      images += '<li onClick=enlargeImage("' + url + '") class="col-md-3"><img src=' + url + ' /></li>';
+    }
+  }
+
+  if (images) {
+    $('ul.product-side-list').html(images);
+  }
+}
+
+function getDetails(partNumber) {
+  Shopatron.getProduct(
+    {
+      partNumber: partNumber
+    },
+    {
+      error: function () {
+        // TODO: i18n
+        insertDetails ({
+          description: 'Description unavailable',
+          name: 'Long name unavailable',
+          price: 'Price unavailable',
+          image: '//images/placeholder.png'
+        });
+      },
+      success: function (product) {
+        insertDetails({
+          description: product.description,
+          image: product.image,
+          name: product.name,
+          price: product.price,
+          images: product.images
+        });
+      }
+    }
+  )
+}

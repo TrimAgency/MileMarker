@@ -6,16 +6,15 @@
 
 get_header(); ?>
 
-
-<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
-<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js'></script>
 <script src="http://mediacdn.shopatron.com/media/js/product/shopatronAPI-2.4.min.js" 
         id="shopatronCart" 
         type="text/javascript">
   {"apiKey":"8xyqdath"}
 </script>
 <script src="http://mediacdn.shopatron.com/media/js/product/shopatronJST-2.3.min.js" type="text/javascript"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/mm-catalog.js" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/product.js" type="text/javascript"></script>
 
 <link href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css" rel="stylesheet">
 <link href="<?php echo get_template_directory_uri(); ?>/css/plugin/bootstrap-spinner.css" rel="stylesheet">
@@ -42,6 +41,7 @@ get_header(); ?>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
                     </a>
                 </div>
+
                 <ul class="page-sidebar-menu" data-slide-speed="200" data-auto-scroll="true">
                     <li>
                         <a href="http://milemarker.com/products" target="_self">PRODUCTS</a>
@@ -59,6 +59,15 @@ get_header(); ?>
                         <a href="http://milemarker.com/where-to-buy" target="_self">WHERE TO BUY</a>
                     </li>
                 </ul>
+
+                <div id="checkOutCart" style="display: none">
+                  <div id="cartImg"></div>
+                  <div id="quick_cart_div_id"></div>
+                  <button id="checkoutBtn" type="button" data-toggle="modal" data-target="#myModal">Checkout</button>
+                </div>
+
+                <div id="arrowHead" style="display: none;">ADDED TO CART</div>
+
                 <div class="search-content">
                     <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
                         <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" placeholder="Search" />
@@ -86,15 +95,15 @@ get_header(); ?>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="product-title">SEC8 SCOUT (es)</h1>
+                            <h1 class="product-title"><?php the_title(); ?></h1>
                                 <div class="title-icon-content">
                                     <div class="capacity-icon title-icon pull-left"></div>
                                     <div class="score-icon title-icon pull-left"></div>
                                 </div>
                                 <ol class="breadcrumb">
-                                    <li><a href="#">PRODUCT</a></li>
-                                    <li><a href="#">TYPE</a></li>
-                                    <li class="active">PRODUCT TITLE</li>
+                                    <li><a href="#">Product</a></li>
+                                    <li><a href="#">{{ Type }}</a></li>
+                                    <li class="active"><?php the_title(); ?></li>
                                 </ol>
                             </div>
                         </div>
@@ -119,15 +128,13 @@ get_header(); ?>
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <h2 class="product-desc-title">This is a product subhead.<br>It is really important.</h2>
+                                <h2 class="product-desc-title">Product details unavailable.</h2>
                                 <div class="product-desc-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut convallis eros. Fusce vitae hendrerit turpis. Aenean blandit ex id cursus varius. Aenean gravida augue justo. Nunc sit amet hendrerit lacus. Ut in nibh a ipsum egestas venenatis. Praesent purus elit, vulputate vestibulum felis id, tempor consequat mauris. fringilla, consectetur orci sed, pulvinar ante. Vivamus pulvinar suscipit mauris feugiat sollicitudin. Phasellus scelerisque lorem vel nisi fringilla aliquam. Suspendisse quis tellus non tellus dapibus viverra. Pellentesque tellus erat, tristique nec facilisis ac, bibendum non nunc. Duis pellentesque dignissim tortor. Donec feugiat mollis nisl. Suspendisse ante lacus, posuere sit amet dapibus eget, bibendum ut ligula. Donec malesuada sit amet metus a fringilla. Curabitur consectetur libero justo, sit amet tempus orci interdum quis.</p>
-                                    <br>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut convallis eros. Fusce vitae</p>
+                                  <?php the_content(); ?>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <p class="product-cost">$1549<span class="decimal">99</span></p>
+                                        <p class="product-cost">ask for quote</p>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="pull-left">
