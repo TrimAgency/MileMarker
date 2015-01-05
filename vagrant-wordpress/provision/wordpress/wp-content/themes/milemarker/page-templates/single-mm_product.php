@@ -28,6 +28,18 @@ get_header(); ?>
 </head>
 
 <body data-partNumber="<?php the_field('partNumber'); ?>">
+
+    <!-- Shopatron cart modal -->
+    <div class="modal fade modal-background" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cart-modal" aria-hidden="true">
+      <div class="modal-dialog dialog-width">
+        <div class="modal-content">
+
+            <div id="full-cart"></div>
+
+        </div>
+      </div>
+    </div>
+
     <div class="page-container">
         <div class="page-sidebar-wrapper">
             <button class="navbar-toggle collapsed sidebar-navbar-collapse" data-target=".page-sidebar" data-toggle="collapse" type="button">
@@ -60,13 +72,13 @@ get_header(); ?>
                     </li>
                 </ul>
 
-                <div id="checkOutCart" style="display: none">
-                  <div id="cartImg"></div>
-                  <div id="quick_cart_div_id"></div>
-                  <button id="checkoutBtn" type="button" data-toggle="modal" data-target="#myModal">Checkout</button>
+                <div id="checkout-cart" style="display: none">
+                  <div id="cart-image"></div>
+                  <div id="quick-cart"></div>
+                  <button id="checkout-button" type="button" data-toggle="modal" data-target="#cart-modal">Checkout</button>
                 </div>
 
-                <div id="arrowHead" style="display: none;">ADDED TO CART</div>
+                <div id="arrowhead" style="display: none;">Added to cart</div>
 
                 <div class="search-content">
                     <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
@@ -165,10 +177,10 @@ get_header(); ?>
                                 <div class="product-buttons">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <button class="small-button black-color-button">ADD TO CART</button>
+                                          <div id="cart-button"></div>
                                         </div>
                                         <div class="col-md-6">
-                                            <button class="small-button black-color-button">FIND A DEALER</button>
+                                          <button class="small-button black-color-button">FIND A DEALER</button>
                                         </div>
                                     </div>
                                 </div>
