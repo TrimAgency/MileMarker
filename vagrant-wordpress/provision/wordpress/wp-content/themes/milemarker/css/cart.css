@@ -22,6 +22,78 @@
 	z-index: 1;
 }
 
+/* Quantity
+============================================== */
+
+#spinnerUp,
+#spinnerDown {
+	position: absolute;
+	z-index: 99;
+	width: 0; 
+	height: 0;
+	left: 45px; 
+}
+#spinnerUp {
+	top: 39px;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 13px solid #6c6667;
+}
+#spinnerDown { 
+	top: 59px;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-top: 13px solid #6c6667;
+}
+
+
+/* Search Bar
+============================================== */
+
+.mm-form { 
+	border-top: 1px solid #4f4c4d;
+	width: 100% !important; 
+}
+.mm-form i,
+.mm-form button,
+.mm-form input {
+	background-color: #231f20 !important;
+}
+.mm-form input,
+.mm-form button {
+	height: 49px !important;
+}
+.mm-form input {
+	width: 141px !important; 
+	padding: 0px !important;
+	padding-left: 4px !important;
+}
+
+.mm-form input::-webkit-input-placeholder,
+.mm-form input {
+   color: rgba(180, 180, 180, 1) !important;
+}
+
+
+.mm-form input:focus {
+	border: none;
+}
+
+.mm-form button {
+	border: none;
+	width: 40px !important;
+}
+.mm-form i { 
+	padding-right: 4px !important; 
+	color: #f26622; 
+	background-color: none; 
+	font-size: 20px;
+}
+
+/* End search bar
+============================================== */
+
+
 /* Replace Content
 ============================================== */
 
@@ -95,11 +167,12 @@
 /* Btn styling
 ============================================== */
 
-#checkoutBtn,
+#checkout-button,
 .shptrn_ci_qty button,
 .shptrn_atc_button button,
 .shptrn_checkout_button button,
-.shptrn_ci_qty input {
+.shptrn_ci_qty input,
+.mm-form button {
 	line-height: 0px !important;
 	padding: 0px !important;
 }
@@ -112,11 +185,16 @@
 	font-size: 34px;
 	border: 7px solid #f26622;
 }
+.shptrn_atc_button button {
+	position: absolute;
+	right: 137px;
+	margin-top: 26px; 
+}
 
 /* End btn styling
 ============================================== */
 
-#checkoutBtn { 
+#checkout-button { 
 	width: 120px;
 	font-size: 25px;
 	border: 3px solid #f26622;
@@ -124,7 +202,7 @@
 	margin-left: 46px !important; 
 	margin-top: 15px;
 }
-#checkoutBtn:focus { outline: none; }
+#checkout-button:focus { outline: none; }
 .shptrn_quantity label { 
   font-family: "NimbusSanTCon";
   font-size: 23px; 
@@ -209,6 +287,33 @@
 /* Quick Cart
 ============================================== */
 
+.atc_column {
+  z-index:99;
+}
+.find_dealer {
+	margin-top: 25px;
+	margin-right: 5px; 
+	width: 174px !important;
+}
+
+.product-social-list i {
+	color: #6c6667;
+}
+.product-social-list {
+	margin-top: 15px !important;
+	padding-left: 17px; 
+}
+
+.shptrn_quantity input {
+	width: 80px !important;
+	height: 45px !important;
+	padding-right: 0px !important;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 4px !important;
+	line-height: 0px !important; 
+}
+
 .shptrn_quick_label { 
 	color: rgba(111, 105, 106, 1); 
 	font-size: 16px; 
@@ -216,7 +321,6 @@
 	margin-left: 33px; 
 	padding-bottom: 35px !important;  
 }
-
 .shopatron_quick_cart { padding-left: 15px; padding-top: 10px;  }
 #shptrn_checkout_detail_content { 
 	width: 20%; 
@@ -247,11 +351,16 @@
 .shptrn_quantity label { font-weight: 500; }
 #checkOutCart { position: relative; }
 #cartImg { 
-	background-image: url('../cart.png');
-	background-size: 26px 20px;
-	top: 11px;
-	left: 13px;
+	background-image: url('images/cart.gif');
+	background-size: 23px 21px;
+	top: 12px;
+	left: 15px;
 	position: absolute; 
-	width: 26px; 
+	width: 23px; 
 	height: 20px; 
+}
+.shptrn_quantity,
+.shptrn_quantity label { 
+	margin: 0px !important;
+	padding: 0px !important;
 }
