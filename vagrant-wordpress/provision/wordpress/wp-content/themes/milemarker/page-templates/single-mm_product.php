@@ -27,7 +27,7 @@ get_header(); ?>
 
 </head>
 
-<body data-partNumber="<?php the_field('partNumber'); ?>">
+<body onload="loadCart()" data-partNumber="<?php the_field('partNumber'); ?>"> 
 
     <!-- Shopatron cart modal -->
     <div class="modal fade modal-background" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cart-modal" aria-hidden="true">
@@ -72,18 +72,18 @@ get_header(); ?>
                     </li>
                 </ul>
 
-                <div id="checkout-cart" style="display: none">
+                <div id="checkout-cart" style="display: none;">
                   <div id="cart-image"></div>
                   <div id="quick-cart"></div>
-                  <button id="checkout-button" type="button" data-toggle="modal" data-target="#cart-modal">Checkout</button>
+                  <button id="checkout-button" type="button" data-toggle="modal" data-target="#cart-modal">CHECKOUT</button>
                 </div>
 
-                <div id="arrowhead" style="display: none;">Added to cart</div>
+                <div id="arrowHead" style="display: none;">ADDED TO CART</div>
 
                 <div class="search-content">
-                    <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-                        <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" placeholder="Search" />
-                        <button type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+                    <form class="mm-form" method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+                        <button class="pull-left" type="submit" id="searchsubmit"><i class="fa fa-search pull-right"></i></button>
+                        <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" placeholder="PRODUCT SEARCH" />
                     </form>
                 </div>
                 <div class="social-content">
@@ -148,31 +148,27 @@ get_header(); ?>
                                     <div class="col-md-8">
                                         <p class="product-cost">ask for quote</p>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="pull-left">
-                                            <p class="quantity-title">QUANTITY</p>
-                                            <div class="input-group spinner" data-trigger="spinner">
-                                                <input type="text" class="quantity-value" value="1" data-rule="quantity">
-                                                <span class="input-group-btn">
-                                                    <a href="javascript:;" class="spin-up" data-spin="up"></a>
-                                                    <a href="javascript:;" class="spin-down" data-spin="down"></a>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="pull-left">
-                                            <ul class="product-social-list">
-                                                <li>
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
+
+                                    <div class="col-md-2 atc_column">
+                                      <span id="spinnerUp" onClick="upQuantity()"></span>
+                                      <span id="spinnerDown" onClick="downQuantity()"></span>
+                                      <div id="cart-button"></div>
                                     </div>
+
+                                    <div class="col-md-1">
+                                      <ul class="product-social-list">
+                                        <li>
+                                          <a href="#"><i class="fa fa-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                          <a href="#"><i class="fa fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                          <a href="#"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                      </ul>
+                                   </div>
+                                  </div>
                                 </div>
                                 <div class="product-buttons">
                                     <div class="row">
@@ -180,7 +176,7 @@ get_header(); ?>
                                           <div id="cart-button"></div>
                                         </div>
                                         <div class="col-md-6">
-                                          <button class="small-button black-color-button">FIND A DEALER</button>
+                                          <button class="pull-right small-button black-color-button find_dealer">FIND A DEALER</button>
                                         </div>
                                     </div>
                                 </div>
