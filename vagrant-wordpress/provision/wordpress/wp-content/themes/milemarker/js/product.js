@@ -124,10 +124,10 @@ function revealCart() {
   var checkoutCart = document.getElementById('checkout-cart');
   checkoutCart.style.display = "";
 
-  var arrowhead = document.getElementById('arrowhead');
-  arrowhead.style.display = "";
+  var arrowHead = document.getElementById('arrowHead');
+  arrowHead.style.display = "";
 
-  $('#arrowhead').delay(2000).fadeOut(2000);
+  $('#arrowHead').delay(2000).fadeOut(2000);
 }
 
 function insertDetails(details) {
@@ -151,6 +151,25 @@ function insertDetails(details) {
     $('ul.product-side-list').html(images);
   }
 }
+
+function upQuantity() {
+  getQuantity.value++
+}
+
+function downQuantity() {
+  if(getQuantity.value <= 1) {
+    getQuantity.value = 1;
+  } else {
+    getQuantity.value--;
+  }
+}
+
+function loadCart() {
+  getQuantity = document.getElementById('quantity');
+  console.log(getQuantity);
+  // getShptrnQuickData = $('.shptrn_quick_data');
+}
+
 
 function getDetails(partNumber) {
   Shopatron.getProduct(
