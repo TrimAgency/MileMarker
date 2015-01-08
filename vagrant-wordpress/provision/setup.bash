@@ -125,6 +125,7 @@ echo 'Installing plugins and theme'
 
 cp -r /vagrant/provision/wordpress/wp-content/plugins/mm-products /var/www/localhost/html/wp-content/plugins/
 cp -r /vagrant/provision/wordpress/wp-content/themes/milemarker /var/www/localhost/html/wp-content/themes/
+sudo chown -R $USER:www-data $SITEPATH/*
 
 echo 'Fixing permissions for WP'
 sudo find $SITEPATH/html -type d -exec chmod 0755 {} \;
