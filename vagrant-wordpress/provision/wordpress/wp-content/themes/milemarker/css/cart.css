@@ -300,6 +300,9 @@
 .product-social-list i {
 	color: #6c6667;
 }
+.product-social-list i:hover {
+	color: #898585;
+}
 .product-social-list {
 	margin-top: 15px !important;
 	padding-left: 17px; 
