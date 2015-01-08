@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   function checkOutHideShow() {
     var checkoutCart = document.getElementById('checkout-cart');
-    checkoutCart.style.display = "";
+    checkoutCart.style.display = "hide";
   }
 
   // Get product details from Shopatron
@@ -60,6 +60,16 @@ $(document).ready(function() {
       },
       clickComplete: function() {
        console.log('Item added');
+      }
+    }
+  );
+
+  Shopatron.getCart(
+    {
+      success: function(cart) {
+        if (cart.cartItems.length > 0) {
+          revealCart();
+        }
       }
     }
   );
@@ -122,7 +132,7 @@ function enlargeImage(url) {
 
 function revealCart() {
   var checkoutCart = document.getElementById('checkout-cart');
-  checkoutCart.style.display = "";
+  checkoutCart.style.display = "block";
 
   var arrowhead = document.getElementById('arrowhead');
   arrowhead.style.display = "";
@@ -166,8 +176,6 @@ function downQuantity() {
 
 function loadCart() {
   getQuantity = document.getElementById('quantity');
-  console.log(getQuantity);
-  // getShptrnQuickData = $('.shptrn_quick_data');
 }
 
 
