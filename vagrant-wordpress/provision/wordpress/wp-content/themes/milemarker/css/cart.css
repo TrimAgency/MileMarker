@@ -353,9 +353,9 @@
 	color: black; 
 }
 .shptrn_quantity label { font-weight: 500; }
-#checkOutCart { position: relative; }
-#cartImg { 
-	background-image: url('images/cart.gif');
+#checkout-cart { position: relative; }
+#cart-image { 
+	background-image: url('../images/cart.gif');
 	background-size: 23px 21px;
 	top: 12px;
 	left: 15px;
