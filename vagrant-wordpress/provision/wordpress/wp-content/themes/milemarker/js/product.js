@@ -167,7 +167,7 @@ function upQuantity() {
 }
 
 function downQuantity() {
-  if(getQuantity.value <= 1) {
+  if (getQuantity.value <= 1) {
     getQuantity.value = 1;
   } else {
     getQuantity.value--;
