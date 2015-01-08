@@ -196,11 +196,11 @@
 ============================================== */
 
 #checkout-button { 
-	width: 120px;
+	width: 113px;
 	font-size: 25px;
 	border: 3px solid #f26622;
 	height: 55px;
-	margin-left: 46px !important; 
+	margin-left: 48px !important; 
 	margin-top: 15px;
 }
 #checkout-button:focus { outline: none; }
