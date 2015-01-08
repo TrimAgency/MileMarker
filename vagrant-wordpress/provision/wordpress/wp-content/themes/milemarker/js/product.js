@@ -124,10 +124,10 @@ function revealCart() {
   var checkoutCart = document.getElementById('checkout-cart');
   checkoutCart.style.display = "";
 
-  var arrowHead = document.getElementById('arrowHead');
-  arrowHead.style.display = "";
+  var arrowhead = document.getElementById('arrowhead');
+  arrowhead.style.display = "";
 
-  $('#arrowHead').delay(2000).fadeOut(2000);
+  $('#arrowhead').delay(2000).fadeOut(2000);
 }
 
 function insertDetails(details) {

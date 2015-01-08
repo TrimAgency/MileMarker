@@ -1,3 +1,4 @@
+
 #quantity { 
 	width: 90px;
 	color: #d6c8b1; 
@@ -7,7 +8,7 @@
 	border-radius: 0px;
 }
 
-#arrowHead {
+#arrowhead {
 	position: absolute;
 	left: 190px;
 	top: 380px;

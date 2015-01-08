@@ -78,7 +78,7 @@ get_header(); ?>
                   <button id="checkout-button" type="button" data-toggle="modal" data-target="#cart-modal">CHECKOUT</button>
                 </div>
 
-                <div id="arrowHead" style="display: none;">ADDED TO CART</div>
+                <div id="arrowhead" style="display: none;">ADDED TO CART</div>
 
                 <div class="search-content">
                     <form class="mm-form" method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
