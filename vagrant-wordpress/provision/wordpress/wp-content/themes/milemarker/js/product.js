@@ -135,7 +135,7 @@ function revealCart() {
   checkoutCart.style.display = "block";
 
   var arrowhead = document.getElementById('arrowhead');
-  arrowhead.style.display = "";
+  arrowhead.style.display = "block";
 
   $('#arrowhead').delay(2000).fadeOut(2000);
 }
