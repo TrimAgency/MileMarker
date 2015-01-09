@@ -46,9 +46,9 @@ get_header(); ?>
                     </li>
                 </ul>
                 <div class="search-content">
-                    <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-                        <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" placeholder="Search" />
-                        <button type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+                    <form class="mm-form" method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+                        <button class="pull-left" type="submit" id="searchsubmit"><i class="fa fa-search pull-right"></i></button>
+                        <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" placeholder="PRODUCT SEARCH" />
                     </form>
                 </div>
                 <div class="social-content">

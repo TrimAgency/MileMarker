@@ -1,3 +1,59 @@
+
+
+/* Search ui update
+============================================= */
+
+.mm-form { 
+    border-top: 1px solid #4f4c4d;
+    width: 100% !important; 
+}
+.mm-form i,
+.mm-form button,
+.mm-form input {
+    background-color: #231f20 !important;
+}
+.mm-form input,
+.mm-form button {
+    height: 49px !important;
+}
+.mm-form input {
+    width: 141px !important; 
+    padding: 0px !important;
+    padding-left: 4px !important;
+}
+
+.mm-form input::-webkit-input-placeholder,
+.mm-form input {
+   color: rgba(180, 180, 180, 1) !important;
+}
+
+
+.mm-form input:focus {
+    border: none;
+}
+
+.mm-form button {
+    border: none;
+    width: 40px !important;
+}
+.mm-form i { 
+    padding-right: 4px !important; 
+    color: #f26622; 
+    background-color: none; 
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* End search ui update
+============================================= */
+
+
 .search-content {
 }
 
