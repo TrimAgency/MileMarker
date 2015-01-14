@@ -464,126 +464,43 @@ get_header(); ?>
 
                         <!-- Buy Local -->
                         <div class="row applet-area" id="buy_local">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <a class="button back-button applet-button" href="#how_do_you_buy" data-link="#how_do_you_buy">BACK</a>
-                                    </div>
+                            <div class="col-md-12 buy_local_container">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <a class="button back-button applet-button" href="#how_do_you_buy" data-link="#how_do_you_buy">BACK</a>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <h1 class="applet-title">BUY LOCAL</h1>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-11 col-md-offset-1">
+                                  <?php if (function_exists('sl_template')) {print sl_template('[STORE-LOCATOR]');} ?>
                                 </div>
+                              </div>
+
+                              <div style="display: none;" class="col-md-offset-6">
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <h1 class="applet-title">BUY LOCAL</h1>
+                                  <div class="row marginT10 marginT10-width">
+                                    <div class="col-md-6 local-contact-info">
+                                        <p class="user-name">HAMMERHEAD TRUCKS</p>
+                                        <p class="address">2031 Sharkfin Way</p>
+                                        <p class="address">Pompano Beach, FL 33069</p>
+                                        <p class="phone">(888) 000-0000</p>
+                                        <p class="email">bitten@hammerheadtrucks.com</p>
                                     </div>
+                                    <div class="col-md-4 pull-right">
+                                      <button class="small-button marginT40">
+                                        <a href="#">VISIT WEBSITE</a>
+                                      </button>
+                                    </div>
+                                  </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-5 col-md-offset-1">
-                                        <div class="row">
-                                            <div class="col-md-7 padding5">
-                                                <input type="text" placeholder="Zipcode*" />
-                                            </div>
-                                            <div class="col-md-5 padding5">
-                                                <button class="small-button">SEARCH</button>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <ul class="property-list padding5">
-                                                <li>
-                                                    <a class="property-item">
-                                                        <div class="col-md-7 title">Alligator Off-Road Madness</div>
-                                                        <div class="col-md-5">
-                                                            <div class="score-icon"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon"></div>
-                                                            <div class="score-icon"></div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="property-item">
-                                                        <div class="col-md-7 title">Hillbilly Parts</div>
-                                                        <div class="col-md-5">
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="property-item">
-                                                        <div class="col-md-7 title">Hammerhead Trucks</div>
-                                                        <div class="col-md-5">
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon"></div>
-                                                            <div class="score-icon"></div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="property-item">
-                                                        <div class="col-md-7 title">Baracuda 4X4 Inc.</div>
-                                                        <div class="col-md-5">
-                                                            <div class="score-icon"></div>
-                                                            <div class="score-icon"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-iconactive"></div>
-                                                            <div class="score-icon"></div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="property-item">
-                                                        <div class="col-md-7 title">Get Er Done Auto</div>
-                                                        <div class="col-md-5">
-                                                            <div class="score-icon"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon"></div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="property-item">
-                                                        <div class="col-md-7 title">Distance</div>
-                                                        <div class="col-md-5">
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon active"></div>
-                                                            <div class="score-icon"></div>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 padding5">
-                                        <div class="row">
-                                            <div class="col-md-12 map-area">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/images/applet/map.png" />
-                                            </div>
-                                        </div>
-                                        <div class="row marginT10">
-                                            <div class="col-md-7 local-contact-info">
-                                                <p class="user-name">HAMMERHEAD TRUCKS</p>
-                                                <p class="address">2031 Sharkfin Way</p>
-                                                <p class="address">Pompano Beach, FL 33069</p>
-                                                <p class="phone">(888) 000-0000</p>
-                                                <p class="email">bitten@hammerheadtrucks.com</p>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <button class="small-button marginT40">VISIT WEBSITE</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                              </div>
                             </div>
-                        </div>
+                          </div>
 
                         <!-- Buy International -->
                         <div class="row applet-area" id="buy_international">
@@ -1034,7 +951,8 @@ get_header(); ?>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="<?php echo get_template_directory_uri(); ?>/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/bootstrap/js/bootstrap.min.js"></script>user-name
+<script src="<?php echo get_template_directory_uri(); ?>/js/splash.js"></script>
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/plugin/jquery.scrolltofixed.min.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/plugin/perfect-scrollbar.js"></script>

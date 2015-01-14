@@ -1,4 +1,50 @@
 /***** Area Above Map DIV. Contains Search Form Inputs *****/
+
+/* Display tale inline
+=========================================================== */
+
+.inline-table {
+	width: 447px;
+	height: 285px;
+}
+#searchForm {
+	/*border: 1px solid red;*/
+	max-width: 925px;
+	min-width: 925px;
+}
+
+#radiusSelect {
+	display: none;
+}
+
+.sl_header {
+  width: 470px !important;
+}
+.buy_local_container {
+	max-height: 750px;
+}
+.local-contact-container {
+	padding-left: 14px;
+}
+.marginT10-width {
+	width: 447px;
+	margin-left: 13px !important;
+}
+
+.visit-site,
+.visit-site a {
+	width: 186px !important;
+	height: 60px;
+}
+ 
+
+
+
+
+/* End display tale inline
+=========================================================== */
+
+
 .sl_header img, .sl_header td, .sl_header #addressSubmit {
 border: none;
 min-width:0px !important;
@@ -21,28 +67,17 @@ background-color:transparent !important;
 	width:100%;
 }
 /***** Search Form Inputs  *****/
-/*#search_label {
-	whitespace:nowrap;
-}*/
+
 #addressInput {
-	border:solid 1px silver !important;
-	padding-left:3px; /*padding-top:3px;*/
-	background:white url(../images/search-input.gif) repeat-x !important;
-	width:100%; /*height:18px;*/
-	/*font-weight:bold;*/
-	margin:0px;
-	padding-top:0px;
-	padding-bottom: 0px !important;
-	color: black !important;
+  width: 250px;
+  height: 60px;
+  background-color: #231f20;
+  color: white;
 }
-#addressInput2_container {
-	vertical-align:top;
-}
-#addressInput2 {
- /* */
-}
+
 #addressSubmit {	
-	/*width:184px; height:31px;*/
+	position: absolute;
+	top: -4px;	
 }
 #radius_label {
 	vertical-align:top;
@@ -54,7 +89,7 @@ background-color:transparent !important;
 #radiusSelect { 
 	/*height:27px; width:100px;*/
 }
-#addressInput, #addressSubmit, #radiusSelect { 
+#addressInput, #radiusSelect { 
 	font-size:14px !important;
 	min-width:0px !important;
 }
@@ -141,6 +176,7 @@ background-color:transparent !important;
 }
 
 /*****Search Results Area *****/
+
 .searchResultsTable, .searchResultsTable tr {
 	width:100% !important;
 	background-color: transparent;
@@ -148,6 +184,7 @@ background-color:transparent !important;
 	background-color:transparent !important;
 }
 .searchResultsTable td {
+	font-family: "NimbusSanTCon" !important;
 	line-height:12px;
 	font-family: Verdana;
 	font-size:10px;
@@ -155,6 +192,14 @@ background-color:transparent !important;
 	background-color: transparent !important;
 	padding:4px !important;
 }
+.searchResultsTable td:first-child {
+	width: 60%;
+}
+.searchResultsTable td:nth-child(2),
+.searchResultsTable td:nth-child(3){
+	display: none;
+}
+
 .text_below_map {
 	/*shown before search performed */
 	font-family:Arial;
@@ -174,9 +219,9 @@ background-color:transparent !important;
 	font-weight:normal;
 	text-align:justify;
 	overflow: auto;
-	height:350px;
+	height: 210px;
 	font-size: 11px;
-	/*color: #000;*/
+	color: white;
 }
 #map_sidebar_td, #map_td {
 	padding: 0px !important;
@@ -186,24 +231,24 @@ background-color:transparent !important;
 	cursor:pointer;
 	cursor:hand;
 	padding:4px;
-	border-bottom:solid silver 1px;
+	border-bottom: solid #6f696a 1px;
 	background-color:transparent;
-	margin: 0px;
-}
-.results_entry:hover {
-	/*hover color of search result*/
-	background-color:salmon;
+	margin-right: 23px;
 }
 .results_row_left_column {
 	width:30%;
 	padding-right:4px;
 	vertical-align:top;
 }
-.results_row_left_column .location_name {
-	font-weight:bold;
+.location_name {
+	font-size: 19px;
+}
+.location_name:hover {
+	color: #f26622;
+}
+.results_row_left_column {
+	font-family: "NimbusSanTCon"; 
 	font-size:12px;
-	font-family:Georgia;
-	/*line-height: 16px;*/
 }
 .results_row_center_column {
 	width:40%;

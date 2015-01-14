@@ -1444,7 +1444,7 @@ $cs_options.="<option value='$value[city_state]'>$value[city_state]</option>";
 		$theme_path=SL_PATH."/images";
 	}
 	$submit_img=$theme_base."/search_button.png";
-	$loading_img=(file_exists(SL_UPLOADS_PATH."/images/loading.gif"))? SL_UPLOADS_BASE."/images/loading.gif" : SL_BASE."/images/loading.gif"; //for loading/processing gif image
+	// $loading_img=(file_exists(SL_UPLOADS_PATH."/images/loading.gif"))? SL_UPLOADS_BASE."/images/loading.gif" : SL_BASE."/images/loading.gif"; //for loading/processing gif image
 	$mousedown=(file_exists($theme_path."/search_button_down.png"))? "onmousedown=\"this.src='$theme_base/search_button_down.png'\" onmouseup=\"this.src='$theme_base/search_button.png'\"" : "";
 	$mouseover=(file_exists($theme_path."/search_button_over.png"))? "onmouseover=\"this.src='$theme_base/search_button_over.png'\" onmouseout=\"this.src='$theme_base/search_button.png'\"" : "";
 	$button_style=(file_exists($theme_path."/search_button.png"))? "type='image' src='$submit_img' $mousedown $mouseover" : "type='submit'";
@@ -1455,27 +1455,33 @@ $cs_options.="<option value='$value[city_state]'>$value[city_state]</option>";
 $form="
 <div id='sl_div'>
   <form onsubmit='searchLocations(); return false;' id='searchForm' action=''>
-    <table border='0' cellpadding='3px' class='sl_header' style='width:$width$width_units;'><tr>
-	<td valign='top' id='search_label'>$search_label&nbsp;</td>
-	<td ";
+    <table class='sl_header pull-left'>";
 	
-	if ($sl_vars['use_city_search']!=1) {$form.=" colspan='4' ";}
+	// if ($sl_vars['use_city_search']!=1) {$form.=" colspan='4' ";}
 	
-	$form.=" valign='top'><input type='text' id='addressInput' size='50' /></td>
-	";
+	$form.="><tr><td><input id='addressInput' placeholder='Zipcode' />";
 	
-	if (!empty($cs_array) && $sl_vars['use_city_search']==1) {
-		$form.="<td valign='top'></td>";
-	}
+	$form.="<input $button_style value='Search Locations' id='addressSubmit'/></td>
+
+	<tr id='cm_mapTR'>
+      <td width='' valign='top' style='/*display:hidden; border-right:solid silver 1px*/' id='map_sidebar_td'> <div id='map_sidebar' style='width:$width$width_units;/* $height$height_units; */'> <div class='text_below_map'>$sl_instruction_message</div></div>
+      </td>
+    </tr>
 	
-	if (!empty($cs_array) && $sl_vars['use_city_search']==1) {
-		$form.="<td id='addressInput2_container' colspan='2'>";
-		$form.="<select id='addressInput2' onchange='aI=document.getElementById(\"searchForm\").addressInput;if(this.value!=\"\"){oldvalue=aI.value;aI.value=this.value;}else{aI.value=oldvalue;}'>";
-		if (!empty($sl_vars['city_dropdown_label'])) {
-			$form.="<option value=''>".$sl_vars['city_dropdown_label']."</option>";
-		}
-		$form.="$cs_options</select></td>";
-	}
+	</tr></table>";
+
+	// if (!empty($cs_array) && $sl_vars['use_city_search']==1) {
+	// 	$form.="<td valign='top'></td>";
+	// }
+	
+	// if (!empty($cs_array) && $sl_vars['use_city_search']==1) {
+	// 	$form.="<td id='addressInput2_container' colspan='2'>";
+	// 	$form.="<select id='addressInput2' onchange='aI=document.getElementById(\"searchForm\").addressInput;if(this.value!=\"\"){oldvalue=aI.value;aI.value=this.value;}else{aI.value=oldvalue;}'>";
+	// 	if (!empty($sl_vars['city_dropdown_label'])) {
+	// 		$form.="<option value=''>".$sl_vars['city_dropdown_label']."</option>";
+	// 	}
+	// 	$form.="$cs_options</select></td>";
+	// }
 	
 	/*if ($name_array && $sl_vars['use_name_search']==1) {
 		$form.="<td valign='top'><nobr>&nbsp;<b>OR</b>&nbsp;</nobr></td>";
@@ -1492,34 +1498,26 @@ $form="
 	//$form.="<input name='addressInput3'><input type='hidden' value='1' name='name_search'></td>";
 	}*/
 	
-	$sl_radius_label=$sl_vars['radius_label'];
-	$form.="
-	</tr><tr>
-	 <td id='radius_label'>".__("$sl_radius_label", SL_TEXT_DOMAIN)."</td>
-	 <td id='radiusSelect_td' ";
+	// $sl_radius_label=$sl_vars['radius_label'];
+	// $form.=
+	// </tr><tr>
+	//  <td id='radius_label'>".__("$sl_radius_label", SL_TEXT_DOMAIN)."</td>
+	//  <td id='radiusSelect_td' ;
 	
-	if ($sl_vars['use_city_search']==1) {$form.="colspan='2'";}
+	// if ($sl_vars['use_city_search']==1) {$form.="colspan='2'";}
 	 
-	$form.="><select id='radiusSelect'>$r_options</select>
-	</td>
-	<td valign='top' ";
+	$form.="<select id='radiusSelect'>$r_options</select>";
 	
-	if ($sl_vars['use_city_search']!=1) {$form.="colspan='2'";}
+	// if ($sl_vars['use_city_search']!=1) {$form.="colspan='2'";}
 	
-	$form.=" ><input $button_style value='Search Locations' id='addressSubmit'/></td>
-	<td><img src='$loading_img' id='loadImg' style='opacity:0; filter:alpha(opacity=0); height:28px; vertical-align:bottom; position:relative; '></td>
-	</tr></table>";
 	$form.=(function_exists("do_sl_hook"))? do_sl_header() : "" ;
-$form.="<table style='width:100%;/*border:solid silver 1px*/' cellspacing='0px' cellpadding='0px' > 
+    $form.="<table class='inline-table'> 
      <tr>
-        <td style='width:100%' valign='top' id='map_td'> <div id='sl_map' style='width:$width$width_units; height:$height$height_units'></div><table cellpadding='0px' class='sl_footer' style='width:$width$width_units;{$hide}' ><tr><td class='sl_footer_left_column'><a href='http://www.viadat.com/store-locator' target='_blank' title='WordPress Store Locator -- LotsOfLocales&trade;'>WordPress Store Locator</a></td><td class='sl_footer_right_column'> <a href='http://www.viadat.com' target='_blank' title='Map Maker for Creating Store Locators or Any Address Maps Using WordPress & Google Maps'>Viadat Creations</a></td></tr></table>
+        <td style='width:100%' valign='top' id='map_td'> <div id='sl_map' style='width:$width$width_units; height:$height$height_units'></div>
 		</td>
       </tr>
-	  <tr id='cm_mapTR'>
-        <td width='' valign='top' style='/*display:hidden; border-right:solid silver 1px*/' id='map_sidebar_td'> <div id='map_sidebar' style='width:$width$width_units;/* $height$height_units; */'> <div class='text_below_map'>$sl_instruction_message</div></div>
-        </td></tr>
   </table></form>
-</div>";
+  </div>";
 
 	//preg_match("@\[STORE-LOCATOR [tag=\"(.*)\"]?\]@", $matched); 
 	//global $map_tag=$matched[1];
