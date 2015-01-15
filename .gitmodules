@@ -1,3 +1,0 @@
-[submodule "vagrant-wordpress/provision/wordpress"]
-	path = vagrant-wordpress/provision/wordpress
-	url = git@github.com:TrimAgency/milemarker-wordpress.git
