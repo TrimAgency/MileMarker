@@ -1,4 +1,4 @@
-#!/usr/local/env bash
+#!/usr/bin/env bash
 WPCLI="wp-cli"
 
 echo 'Setting up WP test site'
@@ -11,6 +11,7 @@ $WPCLI core install \
 
 echo 'Activating plugins and theme'
 $WPCLI plugin activate advanced-custom-fields
+$WPCLI plugin activate advanced-custom-fields-table
 $WPCLI plugin activate mm-products
 $WPCLI theme activate milemarker
 
